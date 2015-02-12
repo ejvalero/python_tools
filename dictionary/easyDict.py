@@ -2,7 +2,7 @@ import csv
 #filename = "/home/emanuel/Downloads/python_dict/python_dict_data.txt"
 
 
-def easyDictionary(nFile, sep="\t", subset='All', display=True):
+def easyDict(nFile, sep="\t", subset='All', display=True):
     #open tab-delimited
     fileData = csv.reader(open(nFile, 'rb'), delimiter=sep)
     #select rows to display

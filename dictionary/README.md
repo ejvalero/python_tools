@@ -9,12 +9,14 @@
 **Usage**
 - Run Python on your computer
 - Load `easyDict.py` using `execfile`:
-- Create dictionary from tab-delimited data
+- Create dictionary from tab/comma delimited data
 
 **Example**
 
 ```
 # Load `easyDict.py`
+execfile('easyDict.py')
 
-execfile(easyDict)
+# Create dictionary from tab or comma delimited data
+mtc = easyDict("data.csv", sep=",", subset=[1, 3]), display=False)
 ```

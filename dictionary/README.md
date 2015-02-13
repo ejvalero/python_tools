@@ -8,7 +8,13 @@
 
 **Usage**
 - Run Python on your computer
-- Load `easyDict.py` using `execfile`: <br/>
-  ```execfile('easyDict.py')```
-
+- Load `easyDict.py` using `execfile`:
 - Create dictionary from tab-delimited data
+
+**Example**
+
+```
+# Load `easyDict.py`
+
+execfile(easyDict)
+```

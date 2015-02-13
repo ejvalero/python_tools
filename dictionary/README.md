@@ -55,14 +55,33 @@ Porsche 914-2: 26
 Merc 450SL: 17.3
 Mazda RX4 Wag: 21
 ```
-```
+
+```python
 # select rows from 2 to 5
 mtc = easyDict("data/data.csv", sep=",", subset=[2, 5], display=True)
 ```
-
 ```
 Mazda_RX4_Wag: 21
 Hornet_4_Drive: 21.4
 Datsun_710: 22.8
 Mazda_RX4: 21
+```
+
+```python
+# select row 3
+mtc = easyDict("data/data.csv", sep=",", subset=3, display=True)
+```
+```
+Mazda_RX4_Wag: 21
+```
+
+```python
+# consults from dictionary
+mtc = easyDict("data/data.csv", sep=",", subset=[3, 5], display=False)
+mtc['Mazda_RX4_Wag']
+mtc['Datsun_710']
+```
+```
+'21'
+'22.8'
 ```

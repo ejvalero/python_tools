@@ -10,4 +10,5 @@
 - Run Python on your computer
 - Load `easyDict.py` using `execfile`: <br/>
   ```execfile('easyDict.py')```
+
 - Create dictionary from tab-delimited data

@@ -54,7 +54,7 @@ def setNodeToLine(filename, parent, nodename):
         if len(citedReferences) > 0:
             childrenNames = citedReferences[0].tag
             childrenCount = str( len(citedReferences.getchildren()) )
-            print( childrenCount + ' nodes named ' + childrenNames + ' changed to ' + nodename )
+            print( 'WARNING: ' + childrenCount + ' nodes tagged as "' + childrenNames + '" were changed to ' + nodename )
 
             for cited in citedReferences:
                 cited.tag = nodename
@@ -81,13 +81,20 @@ def setNodeToLine(filename, parent, nodename):
 
 
     # Exportar archivos con la nueva estructura a la ruta definida en la variable 'outputDir'
+    
     if not os.path.exists(outputDir):
-        os.makedirs(outputDir)
+        subdir = filename.split('/')[0]
+        
+        if subdir is not None:
+            os.makedirs(outputDir + subdir + '/')
+        else:
+            os.makedirs(outputDir)
+
+    output = outputDir + filename
 
     root = tree.getroot()
     indent(root)
-    tree.write(outputDir + filename, encoding='utf-8')
-
+    tree.write(output, encoding='utf-8')
 
 """
 Formatear identación de los archivos, de acuerdo con su estructura
@@ -118,14 +125,3 @@ def indent(element, level = 0, more_sibs = False):
         if level and (not element.tail or not element.tail.strip()):
             element.tail = i
             if more_sibs: element.tail += '  '
-
-
-"""
-Ejemplo para todos los archivos en 'xml'
-
-
-xmls = os.listdir('inputs/DT00')
-
-for xmlfile in xmls:
-    setNodeToLine( xmlfile, 'cited-references', 'cited-reference' )
-"""

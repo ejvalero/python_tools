@@ -10,10 +10,13 @@ Small package for easy management of elements and subelements contained in xml f
 - __Input__: `.xml` files with multi line text in any `parent` node.
 - __Output__: `.xml` files with subnodes `nodename` inside `parent`, replacing multiline text.
 - __How to use__: 
-    1. Create a sub-directory whith name `xml` in the `inputs` directory.
-    2. Put all `.xml` files inside the directory created before.
-    3. Open the terminal and go to the root directory of `tagger.py`:
+    0. Clone or download Python XMLTagger
+    1. Open the terminal and go to the XMLTagger directory:
     ```sh
     cd XMLTagger
     ```
-    4. 
+    2. Put all your `.xml` files inside the `xml` directory located insite `inputs`.
+    4. Run the following:
+    ```sh
+    python3 processFromXMLdir.py
+    ```

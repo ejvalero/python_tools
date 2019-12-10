@@ -1,0 +1,458 @@
+<Reference>
+  <Ref-information date="2019-11-04" status="completed" updated-by="AR">
+    <ref-label>Keith_Foundations_2013</ref-label>
+    <authors>
+      <author name="Keith, David A.">
+        <affiliations>
+          <affiliation>Australian Wetlands Rivers and Landscapes Centre, University of New South Wales, Sydney, New South Wales, Australia.</affiliation>
+          <affiliation>New South Wales Office of Environment andHeritage, Hurstville, New South Wales, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Rodriguez, Jon Paul">
+        <affiliations>
+          <affiliation>Centro de Ecologia, Instituto Venezolano de Investigaciones Cientificas, Caracas, Venezuela.</affiliation>
+          <affiliation>Provita, Caracas, Venezuela.</affiliation>
+          <affiliation>EcoHealth Alliance, New York, New York, United States of America.</affiliation>
+          <affiliation>IUCN Commission on Ecosystem Management and IUCN Species Survival Commission, Gland, Switzerland.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Rodriguez-Clark, Kathryn M.">
+        <affiliations>
+          <affiliation>Centro de Ecologia, Instituto Venezolano de Investigaciones Cientificas, Caracas, Venezuela.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Nicholson, Emily">
+        <affiliations>
+          <affiliation>Centre of Excellence for Environmental Decisions, University of Melbourne, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Aapala, Kaisu">
+        <affiliations>
+          <affiliation>Finnish Environment Institute, Helsinki, Finland.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Alonso, Alfonso">
+        <affiliations>
+          <affiliation>Smithsonian Conservation Biology Institute, National Zoological Park, Washington, D.C., United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Asmussen, Marianne">
+        <affiliations>
+          <affiliation>Centro de Ecologia, Instituto Venezolano de Investigaciones Cientificas, Caracas, Venezuela.</affiliation>
+          <affiliation>EcoHealth Alliance, New York, New York, United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Bachman, Steven">
+        <affiliations>
+          <affiliation>Royal Botanic Gardens, Kew, England.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Basset, Alberto">
+        <affiliations>
+          <affiliation>Department of Biological and Environmental Science, Ecotekne Center, University of Salento, Lecce, Italy.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Barrow, Edmund G.">
+        <affiliations>
+          <affiliation>IUCN Global Ecosystem Management Programme, Nairobi, Kenya.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Benson, John S.">
+        <affiliations>
+          <affiliation>Royal Botanic Gardens Trust, Sydney, New South Wales, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Bishop, Melanie J.">
+        <affiliations>
+          <affiliation>Department of Biological Sciences, Macquarie University, New South Wales, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Bonifacio, Ronald">
+        <affiliations>
+          <affiliation>Science Resource Centre, Department of Environment and Natural Resources, Adelaide, South Australia, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Brooks, Thomas M.">
+        <affiliations>
+          <affiliation>IUCN Commission on Ecosystem Management and IUCN Species Survival Commission, Gland, Switzerland.</affiliation>
+          <affiliation>NatureServe, Arlington, Virginia, United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Burgman, Mark A.">
+        <affiliations>
+          <affiliation>Australian Centre of Excellence for Risk Assessment, University of Melbourne, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Comer, Patrick">
+        <affiliations>
+          <affiliation>NatureServe, Boulder, Colorado, United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Comin, Francisco A.">
+        <affiliations>
+          <affiliation>Pyrenean Institute of Ecology, Zaragoza. Spain.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Essl, Franz">
+        <affiliations>
+          <affiliation>Environment Agency Austria, Vienna, Austria.</affiliation>
+          <affiliation>Department of Conservation Biology, Vegetation and Landscape Ecology, University of Vienna, Vienna, Austria.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Faber-Langendoen, Don">
+        <affiliations>
+          <affiliation>NatureServe, Arlington, Virginia, United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Fairweather, Peter G.">
+        <affiliations>
+          <affiliation>School of Biological Sciences, Flinders University, Adelaide, South Australia, Australia Robert J. Holdaway.</affiliation>
+          <affiliation>Landcare Research, Lincoln, New Zealand.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Jennings, Michael">
+        <affiliations>
+          <affiliation>Univ Idaho, Dept Geog, Moscow, ID 83843 USA</affiliation>
+        </affiliations>
+      </author>
+      <author name="Holdaway, Robert J.">
+        <affiliations>
+          <affiliation>Department of Geography, University of Idaho, Moscow, Idaho, United States of America.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Kingsford, Richard T.">
+        <affiliations>
+          <affiliation>Australian Wetlands Rivers and Landscapes Centre, University of New South Wales, Sydney, New South Wales, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Lester, Rebecca E.">
+        <affiliations>
+          <affiliation>School of Life and Environmental Sciences, Deakin University, Warnambool, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Mac Nally, Ralph">
+        <affiliations>
+          <affiliation>Australian Centre for Biodiversity, School of Biological Sciences Monash University, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="McCarthy, Michael A.">
+        <affiliations>
+          <affiliation>Centre of Excellence for Environmental Decisions, University of Melbourne, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Moat, Justin">
+        <affiliations>
+          <affiliation>Royal Botanic Gardens, Kew, England.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Oliveira-Miranda, Maria A.">
+        <affiliations>
+          <affiliation>Provita, Caracas, Venezuela.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Pisanu, Phil">
+        <affiliations>
+          <affiliation>Science Resource Centre, Department of Environment and Natural Resources, Adelaide, South Australia, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Poulin, Brigitte">
+        <affiliations>
+          <affiliation>Tour du Valat Research Center, Arles, France.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Regan, Tracey J.">
+        <affiliations>
+          <affiliation>Centre of Excellence for Environmental Decisions, University of Melbourne, Victoria, Australia.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Riecken, Uwe">
+        <affiliations>
+          <affiliation>German Federal Agency for Nature Conservation, Bonn, Germany.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Spalding, Mark D.">
+        <affiliations>
+          <affiliation>The Nature Conservancy and Conservation Science Group, Department of Zoology, University of Cambridge, Cambridge, England.</affiliation>
+        </affiliations>
+      </author>
+      <author name="Zambrano-Martinez, Sergio">
+        <affiliations>
+          <affiliation>Centro de Ecologia, Instituto Venezolano de Investigaciones Cientificas, Caracas, Venezuela.</affiliation>
+        </affiliations>
+      </author>
+    </authors>
+    <editors>
+      <editor name="Keith, David A.">
+        <affiliations>
+          <affiliation>Australian Wetlands Rivers and Landscapes Centre, University of New South Wales, Sydney, New South Wales, Australia.</affiliation>
+          <affiliation>New South Wales Office of Environment andHeritage, Hurstville, New South Wales, Australia.</affiliation>
+        </affiliations>
+      </editor>
+    </editors>
+    <ref-titles>
+      <ref-title lang="en">Scientific Foundations for an IUCN Red List of Ecosystems</ref-title>
+    </ref-titles>
+    <journal>Plos One</journal>
+    <book-title />
+    <year>2013</year>
+    <volume>8</volume>
+    <number>5</number>
+    <pages />
+    <month>05</month>
+    <abstracts>
+      <abstract lang="en">An understanding of risks to biodiversity is needed for planning action to slow current rates of decline and secure ecosystem services for future human use. Although the IUCN Red List criteria provide an effective assessment protocol for species, a standard global assessment of risks to higher levels of biodiversity is currently limited. In 2008, IUCN initiated development of risk assessment criteria to support a global Red List of ecosystems. We present a new conceptual model for ecosystem risk assessment founded on a synthesis of relevant ecological theories. To support the model, we review key elements of ecosystem definition and introduce the concept of ecosystem collapse, an analogue of species extinction. The model identifies four distributional and functional symptoms of ecosystem risk as a basis for assessment criteria: A) rates of decline in ecosystem distribution; B) restricted distributions with continuing declines or threats; C) rates of environmental (abiotic) degradation; and D) rates of disruption to biotic processes. A fifth criterion, E) quantitative estimates of the risk of ecosystem collapse, enables integrated assessment of multiple processes and provides a conceptual anchor for the other criteria. We present the theoretical rationale for the construction and interpretation of each criterion. The assessment protocol and threat categories mirror those of the IUCN Red List of species. A trial of the protocol on terrestrial, subterranean, freshwater and marine ecosystems from around the world shows that its concepts are workable and its outcomes are robust, that required data are available, and that results are consistent with assessments carried out by local experts and authorities. The new protocol provides a consistent, practical and theoretically grounded framework for establishing a systematic Red List of the world's ecosystems. This will complement the Red List of species and strengthen global capacity to report on and monitor the status of biodiversity.</abstract>
+    </abstracts>
+    <publisher>Public Library Science</publisher>
+    <address>1160 Battery street, STE 100, San Francisco, CA 94111 USA.</address>
+    <type>Article</type>
+    <language>English</language>
+    <DOI>10.1371/journal.pone.0062111</DOI>
+    <ISSN>1932-6203</ISSN>
+    <EISSN />
+    <keywords>
+      <keyword>Food-web perspective</keyword>
+      <keyword>Biodiversity loss</keyword>
+      <keyword>Extincion risk</keyword>
+      <keyword>Habitat loss</keyword>
+      <keyword>Vegatation classification</keyword>
+      <keyword>Ecological communities</keyword>
+      <keyword>Conservation Biology</keyword>
+      <keyword>Environmental - chance</keyword>
+      <keyword>Relative resilience</keyword>
+      <keyword>Global synthesis</keyword>
+    </keywords>
+    <research-areas>
+      <research-area>Science and Technology</research-area>
+    </research-areas>
+    <author-email>david.keith@unsw.edu.au</author-email>
+    <funding-acknowledgement>MAVA Foundation; Gordon and Betty Moore Foundation; Smithsonian Institution; EcoHealth Alliance, Provita; Fulbright Program; Tour du Valat,; Australian Centre of Excellence for Environmental Decisions and Centre de Suive Ecologique.</funding-acknowledgement>
+    <funding-text>The authors gratefully acknowledge funding support from the MAVA Foundation, Gordon and Betty Moore Foundation, Smithsonian Institution, EcoHealth Alliance, Provita, the Fulbright Program, Tour du Valat, the Australian Centre of Excellence for Environmental Decisions and Centre de Suive Ecologique. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-text>
+    <cited-references>
+      <cited-reference>Akcakaya HR, 2000, CONSERV BIOL, V14, P1001, DOI 10.1046/j.1523-1739.2000.99125.x.</cited-reference>
+      <cited-reference>Allen CR, 2005, ECOSYSTEMS, V8, P958, DOI 10.1007/s10021-005-0147-x.</cited-reference>
+      <cited-reference>Alvarez-Filip L, 2009, P R SOC B, V276, P3019, DOI 10.1098/rspb.2009.0339.</cited-reference>
+      <cited-reference>Andren H, 1996, OIKOS, V76, P235, DOI 10.2307/3546195.</cited-reference>
+      <cited-reference>Araoz E, 2010, ECOSYSTEMS, V13, P992, DOI 10.1007/s10021-010-9369-7.</cited-reference>
+      <cited-reference>Ayensu E, 1999, SCIENCE, V286, P685, DOI 10.1126/science.286.5440.685.</cited-reference>
+      <cited-reference>Baillie J., 2004, IUCN RED LIST THREAT.</cited-reference>
+      <cited-reference>Barbone E, 2010, REND LINCEI-SCI FIS, V21, P301, DOI 10.1007/s12210-010-0090-4.</cited-reference>
+      <cited-reference>Benson J. S., 2006, Cunninghamia, V9, P331.</cited-reference>
+      <cited-reference>Blab J, 1995, LANDSCAPE ECOL, V10, P41, DOI 10.1007/BF00158552.</cited-reference>
+      <cited-reference>Blodgett N, 2010, INT J WILDLAND FIRE, V19, P415, DOI 10.1071/WF08162.</cited-reference>
+      <cited-reference>Briske DD, 2005, RANGELAND ECOL MANAG, V58, P1, DOI 10.2111/1551-5028(2005)58(1:SMTARH)2.0.CO;2.</cited-reference>
+      <cited-reference>Burgman M, 2005, RISKS DECISIONS CONS.</cited-reference>
+      <cited-reference>Burgman M.A., 1993, RISK ASSESSMENT CONS.</cited-reference>
+      <cited-reference>Burgman MA, 1999, RISK ANAL, V19, P585, DOI 10.1111/j.1539-6924.1999.tb00430.x.</cited-reference>
+      <cited-reference>Burgman MA, 2003, ANIM CONSERV, V6, P19, DOI 10.1017/S1367943003003044.</cited-reference>
+      <cited-reference>Butchart SHM, 2004, PLOS BIOL, V2, P2294, DOI 10.1371/journal.pbio.0020383.</cited-reference>
+      <cited-reference>Butchart SHM, 2010, SCIENCE, V328, P1164, DOI 10.1126/science.1187512.</cited-reference>
+      <cited-reference>Byrne M, 2008, BIOL J LINN SOC, V93, P177, DOI 10.1111/j.1095-8312.2007.00946.x.</cited-reference>
+      <cited-reference>Cabezas A, 2009, HYDROL EARTH SYST SC, V13, P1.</cited-reference>
+      <cited-reference>Calcagno V, 2011, AM NAT, V177, pE1, DOI 10.1086/657436.</cited-reference>
+      <cited-reference>Cardinale BJ, 2007, P NATL ACAD SCI USA, V104, P18123, DOI 10.1073/pnas.0709069104.</cited-reference>
+      <cited-reference>Cardinale BJ, 2012, NATURE, V486, P59, DOI 10.1038/nature11148.</cited-reference>
+      <cited-reference>Cardinale BJ, 2011, AM J BOT, V98, P572, DOI 10.3732/ajb.1000364.</cited-reference>
+      <cited-reference>Carpenter S, 2001, ECOSYSTEMS, V4, P765, DOI 10.1007/s10021-001-0045-9.</cited-reference>
+      <cited-reference>Carpenter S. R., 2003, EXCELLENCE ECOLOGY S.</cited-reference>
+      <cited-reference>Caughley G, 1994, J ANIM ECOL, V63, P215, DOI 10.2307/5542.</cited-reference>
+      <cited-reference>Chytry M, 2002, J VEG SCI, V13, P79, DOI 10.1658/1100-9233(2002)013{[}0079:DODSWS]2.0.CO;2.</cited-reference>
+      <cited-reference>Clarke PJ, 2005, J VEG SCI, V16, P237, DOI 10.1658/1100-9233(2005)016{[}0237:LCISVI]2.0.CO;2.</cited-reference>
+      <cited-reference>Comin Francisco, 2010, ECOLOGICAL RESTORATI.</cited-reference>
+      <cited-reference>Connell JH, 1977, AM NAT, V111, P1119, DOI 10.1086/283241.</cited-reference>
+      <cited-reference>Costello MJ, 2009, MAR ECOL PROG SER, V397, P253, DOI 10.3354/meps08317.</cited-reference>
+      <cited-reference>Costello MJ, 2010, ENVIRON SCI TECHNOL, V44, P8821, DOI 10.1021/es1012752.</cited-reference>
+      <cited-reference>Cowling RM, 2008, P NATL ACAD SCI USA, V105, P9483, DOI 10.1073/pnas.0706559105.</cited-reference>
+      <cited-reference>Curran LM, 2006, P NATL ACAD SCI USA, V103, P12663, DOI 10.1073/pnas.0605449103.</cited-reference>
+      <cited-reference>Czembor CA, 2009, FOREST ECOL MANAG, V259, P165, DOI 10.1016/j.foreco.2009.10.002.</cited-reference>
+      <cited-reference>Danovaro R, 2008, CURR BIOL, V18, P1, DOI 10.1016/j.cub.2007.11.056.</cited-reference>
+      <cited-reference>Del Moral R, 2007, J VEG SCI, V18, P479, DOI 10.1658/1100-9233(2007)18{[}479:LTCOVD]2.0.CO;2.</cited-reference>
+      <cited-reference>Diamond JM, 1989, PHILOS T ROY SOC B, V325, P469, DOI 10.1098/rstb.1989.0100.</cited-reference>
+      <cited-reference>Dirzo R, 2003, ANNU REV ENV RESOUR, V28, P137, DOI 10.1146/annurev.energy.28.050302.105532.</cited-reference>
+      <cited-reference>Duffy JE, 2007, ECOL LETT, V10, P522, DOI 10.1111/j.1461-0248.2007.01037.x.</cited-reference>
+      <cited-reference>Eisenhauer N, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0016055.</cited-reference>
+      <cited-reference>Elith J, 2006, ECOGRAPHY, V29, P129, DOI 10.1111/j.2006.0906-7590.04596.x.</cited-reference>
+      <cited-reference>Arias-Gonzalez JE, 2012, BIODIVERS CONSERV, V21, P115, DOI 10.1007/s10531-011-0169-y.</cited-reference>
+      <cited-reference>Essl F, 2012, BIODIVERS CONSERV, V21, P655, DOI 10.1007/s10531-011-0206-x.</cited-reference>
+      <cited-reference>Estes JA, 2009, PHILOS T R SOC B, V364, P1647, DOI 10.1098/rstb.2008.0231.</cited-reference>
+      <cited-reference>Faber-Langendoen D., 2009, B ECOL SOC AM, V90, P87.</cited-reference>
+      <cited-reference>Fischer J, 2007, ECOSYSTEMS, V10, P964, DOI 10.1007/s10021-007-9064-5.</cited-reference>
+      <cited-reference>Folke C, 2004, ANNU REV ECOL EVOL S, V35, P557, DOI 10.1146/annurev.ecolsys.35.021103.105711.</cited-reference>
+      <cited-reference>Fontaine C, 2006, PLOS BIOL, V4, P129, DOI 10.1371/journal.pbio.0040001.</cited-reference>
+      <cited-reference>Fritz H, 2011, ECOGRAPHY, V34, P196, DOI 10.1111/j.1600-0587.2010.06537.x.</cited-reference>
+      <cited-reference>Fukami T, 2005, P ROY SOC B-BIOL SCI, V272, P2105, DOI 10.1098/rspb.2005.3277.</cited-reference>
+      <cited-reference>Fulton EA, 2011, FISH FISH, V12, P171, DOI 10.1111/j.1467-2979.2011.00412.x.</cited-reference>
+      <cited-reference>Gaston K. J., 1993, RARITY.</cited-reference>
+      <cited-reference>Gaston KJ, 2008, TRENDS ECOL EVOL, V23, P14, DOI 10.1016/j.tree.2007.11.001.</cited-reference>
+      <cited-reference>Goudard A, 2008, AM NAT, V171, P91, DOI 10.1086/523945.</cited-reference>
+      <cited-reference>Green PT, 2011, ECOLOGY, V92, P1758, DOI 10.1890/11-0050.1.</cited-reference>
+      <cited-reference>Hahs AK, 2009, ECOL LETT, V12, P1165, DOI 10.1111/j.1461-0248.2009.01372.x.</cited-reference>
+      <cited-reference>Hallenbeck W.H., 1986, QUANTITATIVE RISK AS.</cited-reference>
+      <cited-reference>Hannah J, 2012, J GEOPHYS RES-OCEANS, V117, DOI 10.1029/2011JC007591.</cited-reference>
+      <cited-reference>Hanski I, 1998, NATURE, V396, P41, DOI 10.1038/23876.</cited-reference>
+      <cited-reference>Harpole WS, 2007, NATURE, V446, P791, DOI 10.1038/nature05684.</cited-reference>
+      <cited-reference>Hartley S, 2003, CONSERV BIOL, V17, P1559, DOI 10.1111/j.1523-1739.2003.00015.x.</cited-reference>
+      <cited-reference>He FL, 2011, NATURE, V473, P368, DOI 10.1038/nature09985.</cited-reference>
+      <cited-reference>Hector A, 2007, NATURE, V448, P188, DOI 10.1038/nature05947.</cited-reference>
+      <cited-reference>Heemsbergen DA, 2004, SCIENCE, V306, P1019, DOI 10.1126/science.1101865.</cited-reference>
+      <cited-reference>Hobbs R.J., 2009, NEW MODELS ECOSYSTEM.</cited-reference>
+      <cited-reference>Hobbs RJ, 2006, GLOBAL ECOL BIOGEOGR, V15, P1, DOI 10.1111/j.1466-822x.2006.00212.x.</cited-reference>
+      <cited-reference>Hoekstra JM, 2005, ECOL LETT, V8, P23, DOI 10.1111/j.1461-0248.2004.00686.x.</cited-reference>
+      <cited-reference>Holling C.S., 1973, Annual Rev Ecol Syst, V4, P1, DOI 10.1146/annurev.es.04.110173.000245.</cited-reference>
+      <cited-reference>Holling CS, 2001, ECOSYSTEMS, V4, P390, DOI 10.1007/s10021-001-0101-5.</cited-reference>
+      <cited-reference>Hong S, 2010, J CLIMATE, V23, P4669, DOI 10.1175/2010JCLI3697.1.</cited-reference>
+      <cited-reference>Hooper DU, 2012, NATURE, V486, P105, DOI 10.1038/nature11118.</cited-reference>
+      <cited-reference>Hooper DU, 2005, ECOL MONOGR, V75, P3, DOI 10.1890/04-0922.</cited-reference>
+      <cited-reference>Huth N, 2011, J APPL ECOL, V48, P293, DOI 10.1111/j.1365-2664.2010.01936.x.</cited-reference>
+      <cited-reference>Isbell F, 2011, NATURE, V477, P199, DOI 10.1038/nature10282.</cited-reference>
+      <cited-reference>IUCN, 2011, GUID APPL IUCN RED L.</cited-reference>
+      <cited-reference>IUCN, 2001, RED LIST CAT CRIT.</cited-reference>
+      <cited-reference>Jacquez GM, 2008, ENVIRON ECOL STAT, V15, P403, DOI 10.1007/s10651-007-0066-4.</cited-reference>
+      <cited-reference>Jax K, 1998, OIKOS, V82, P253, DOI 10.2307/3546965.</cited-reference>
+      <cited-reference>Jennings MD, 2009, ECOL MONOGR, V79, P173, DOI 10.1890/07-1804.1.</cited-reference>
+      <cited-reference>Keith DA, 1998, CONSERV BIOL, V12, P1076, DOI 10.1046/j.1523-1739.1998.97202.x.</cited-reference>
+      <cited-reference>Keith DA, 2004, BIOL CONSERV, V117, P41, DOI 10.1016/S0006-3207(03)00261-1.</cited-reference>
+      <cited-reference>Keith DA, 2007, J ECOL, V95, P1324, DOI 10.1111/j.1365-2745.2007.01302.x.</cited-reference>
+      <cited-reference>Keith DA, 2009, BIOL CONSERV, V142, P1469, DOI 10.1016/j.biocon.2009.02.015.</cited-reference>
+      <cited-reference>Keith David A., 2009, Ecological Management and Restoration, V10, pS3, DOI 10.1111/j.1442-8903.2009.00453.x.</cited-reference>
+      <cited-reference>King KJ, 2006, INT J WILDLAND FIRE, V15, P527, DOI 10.1071/WF05076.</cited-reference>
+      <cited-reference>Klemas V, 2010, J COASTAL RES, V26, P789, DOI 10.2112/10A-00012.1.</cited-reference>
+      <cited-reference>Kontula T, 2009, BIODIVERS CONSERV, V18, P3861, DOI 10.1007/s10531-009-9684-5.</cited-reference>
+      <cited-reference>Lapointe NWR, 2010, J FISH BIOL, V76, P446, DOI 10.1111/j.1095-8649.2009.02470.x.</cited-reference>
+      <cited-reference>Larsen TH, 2005, ECOL LETT, V8, P538, DOI 10.1111/j.1461-0248.2005.00749.x.</cited-reference>
+      <cited-reference>Lee JK, 1992, PHOTOGRAMM ENG REM S, V58, P1579.</cited-reference>
+      <cited-reference>Lester RE, 2011, ECOL MODEL, V222, P2690, DOI 10.1016/j.ecolmodel.2011.05.009.</cited-reference>
+      <cited-reference>Likens G. E., 1992, ECOSYSTEM APPROACH I.</cited-reference>
+      <cited-reference>Lindenmayer DB, 2012, AUSTRAL ECOL, V37, P745, DOI 10.1111/j.1442-9993.2011.02351.x.</cited-reference>
+      <cited-reference>Lindenmayer DB, 2011, ECOSYSTEMS, V14, P47, DOI 10.1007/s10021-010-9394-6.</cited-reference>
+      <cited-reference>Lindenmayer DB, 2006, HABITAT FRAGMENTATIO.</cited-reference>
+      <cited-reference>Loreau M, 2000, OIKOS, V91, P3, DOI 10.1034/j.1600-0706.2000.910101.x.</cited-reference>
+      <cited-reference>Loreau M, 2003, P NATL ACAD SCI USA, V100, P12765, DOI 10.1073/pnas.2235465100.</cited-reference>
+      <cited-reference>Loreau M, 2010, PHILOS T R SOC B, V365, P49, DOI 10.1098/rstb.2009.0155.</cited-reference>
+      <cited-reference>Ludwig JA, 2007, ECOL INDIC, V7, P442, DOI 10.1016/j.ecolind.2006.05.001.</cited-reference>
+      <cited-reference>Lundberg J, 2003, ECOSYSTEMS, V6, P87, DOI 10.1007/s10021-002-0150-4.</cited-reference>
+      <cited-reference>Mac Arthur Robert H., 1967.</cited-reference>
+      <cited-reference>Mac Nally R., 2011, WATER RESOURCES RES, V47.</cited-reference>
+      <cited-reference>Mace GM, 2008, CONSERV BIOL, V22, P1424, DOI 10.1111/j.1523-1739.2008.01044.x.</cited-reference>
+      <cited-reference>McCarthy MA, 2008, J APPL ECOL, V45, P1428, DOI 10.1111/j.1365-2664.2008.01521.x.</cited-reference>
+      <cited-reference>McKnight MW, 2007, PLOS BIOL, V5, P2424, DOI 10.1371/journal.pbio.0050272.</cited-reference>
+      <cited-reference>Mearns AJ, 2010, WATER ENVIRON RES, V82, P2001, DOI 10.2175/106143010X12756668802175.</cited-reference>
+      <cited-reference>Metternicht GI, 2003, REMOTE SENS ENVIRON, V85, P1, DOI 10.1016/S0034-4257(02)00188-8.</cited-reference>
+      <cited-reference>Micklin P, 2006, EURASIAN GEOGR ECON, V47, P546, DOI 10.2747/1538-7216.47.5.546.</cited-reference>
+      <cited-reference>Midgley GF, 2010, ECOGRAPHY, V33, P612, DOI 10.1111/j.1600-0587.2009.06000.x.</cited-reference>
+      <cited-reference>Miller G, 2010, RANGELAND J, V32, P353, DOI 10.1071/RJ09076.</cited-reference>
+      <cited-reference>Miller RM, 2007, CONSERV BIOL, V21, P684, DOI 10.1111/j.1523-1739.2007.00656.x.</cited-reference>
+      <cited-reference>Moberg F, 1999, ECOL ECON, V29, P215, DOI 10.1016/S0921-8009(99)00009-9.</cited-reference>
+      <cited-reference>Molnar JL, 2008, FRONT ECOL ENVIRON, V6, P485, DOI 10.1890/070064.</cited-reference>
+      <cited-reference>Mucina L, 2006, VEGETATION S AFRICA.</cited-reference>
+      <cited-reference>Nicholson E, 2009, CONSERV BIOL, V23, P259, DOI 10.1111/j.1523-1739.2008.01158.x.</cited-reference>
+      <cited-reference>Noss RF, 1996, TRENDS ECOL EVOL, V11, P351, DOI 10.1016/0169-5347(96)20058-8.</cited-reference>
+      <cited-reference>Olson DM, 2001, BIOSCIENCE, V51, P933, DOI 10.1641/0006-3568(2001)051{[}0933:TEOTWA]2.0.CO;2.</cited-reference>
+      <cited-reference>Patrick WS, 2010, FISH B-NOAA, V108, P305.</cited-reference>
+      <cited-reference>Rodriguez JP, 2011, CONSERV BIOL, V25, P21, DOI 10.1111/j.1523-1739.2010.01598.x.</cited-reference>
+      <cited-reference>Peterson CH, 2003, SCIENCE, V302, P2082, DOI 10.1126/science.1084282.</cited-reference>
+      <cited-reference>Peterson G, 1998, ECOSYSTEMS, V1, P6, DOI 10.1007/s100219900002.</cited-reference>
+      <cited-reference>Pickett S T A, 1989, P110.</cited-reference>
+      <cited-reference>Pickett STA, 2002, ECOSYSTEMS, V5, P1, DOI 10.1007/s10021-001-0051-y.</cited-reference>
+      <cited-reference>Pickett STA, 2001, APPL VEG SCI, V4, P41, DOI 10.1111/j.1654-109X.2001.tb00233.x.</cited-reference>
+      <cited-reference>Possingham HP, 2002, TRENDS ECOL EVOL, V17, P503, DOI 10.1016/S0169-5347(02)02614-9.</cited-reference>
+      <cited-reference>Pounds JA, 1999, NATURE, V398, P611, DOI 10.1038/19297.</cited-reference>
+      <cited-reference>Rackham Oliver, 1986, HIST COUNTRYSIDE.</cited-reference>
+      <cited-reference>Radford JQ, 2005, BIOL CONSERV, V124, P317, DOI 10.1016/j.biocon.2005.01.039.</cited-reference>
+      <cited-reference>Ramirez-Llodra E, 2010, BIOGEOSCIENCES, V7, P2851, DOI 10.5194/bg-7-2851-2010.</cited-reference>
+      <cited-reference>Regan HM, 2002, ECOL APPL, V12, P618, DOI 10.1890/1051-0761(2002)012{[}0618:ATATOU]2.0.CO;2.</cited-reference>
+      <cited-reference>Rhymer JM, 1996, ANNU REV ECOL SYST, V27, P83, DOI 10.1146/annurev.ecolsys.27.1.83.</cited-reference>
+      <cited-reference>Riecken U, 2002, NATUR LANDSCHAFT, V77, P397.</cited-reference>
+      <cited-reference>Ripple WJ, 2004, BIOSCIENCE, V54, P755, DOI 10.1641/0006-3568(2004)054{[}0755:WATEOF]2.0.CO;2.</cited-reference>
+      <cited-reference>Rodrigues ASL, 2006, TRENDS ECOL EVOL, V21, P71, DOI 10.1016/j.tree.2005.10.010.</cited-reference>
+      <cited-reference>Rodriguez JP, 2007, BIODIVERS CONSERV, V16, P183, DOI 10.1007/s10531-006-9102-1.</cited-reference>
+      <cited-reference>Rodriguez JP, 2012, SAPIENS, V5, P6.</cited-reference>
+      <cited-reference>Rogers CS, 1990, MAR ECOL PROG SER, V62, P185, DOI 10.3354/meps062185.</cited-reference>
+      <cited-reference>Rosensweing ML, 1995, SPECIES DIVERSITY SP.</cited-reference>
+      <cited-reference>Rumpff L, 2011, BIOL CONSERV, V144, P1224, DOI 10.1016/j.biocon.2010.10.026.</cited-reference>
+      <cited-reference>Sang A, 2010, BIOL CONSERV, V143, P1405, DOI 10.1016/j.biocon.2010.03.015.</cited-reference>
+      <cited-reference>Scheffer M, 2001, NATURE, V413, P591, DOI 10.1038/35098000.</cited-reference>
+      <cited-reference>Schmitz OJ, 2000, AM NAT, V155, P141, DOI 10.1086/303311.</cited-reference>
+      <cited-reference>Scholze M, 2006, P NATL ACAD SCI USA, V103, P13116, DOI 10.1073/pnas.0601816103.</cited-reference>
+      <cited-reference>Shi JM, 2010, BIODIVERS CONSERV, V19, P1279, DOI 10.1007/s10531-009-9757-5.</cited-reference>
+      <cited-reference>Solow AR, 2005, MATH BIOSCI, V195, P47, DOI 10.1016/j.mbs.2005.02.001.</cited-reference>
+      <cited-reference>Spalding MD, 2007, BIOSCIENCE, V57, P573, DOI 10.1641/B570707.</cited-reference>
+      <cited-reference>Springer AM, 2003, P NATL ACAD SCI USA, V100, P12223, DOI 10.1073/pnas.1635156100.</cited-reference>
+      <cited-reference>Srivastava DS, 2005, ANNU REV ECOL EVOL S, V36, P267, DOI 10.1146/annurev.ecolsys.36.102003.152636.</cited-reference>
+      <cited-reference>Staver AC, 2009, ECOL APPL, V19, P1909, DOI 10.1890/08-1907.1.</cited-reference>
+      <cited-reference>Stoddard JL, 2008, J N AM BENTHOL SOC, V27, P878, DOI 10.1899/08-053.1.</cited-reference>
+      <cited-reference>Tansley AG, 1935, ECOLOGY, V16, P284, DOI 10.2307/1930070.</cited-reference>
+      <cited-reference>Thebault E, 2005, AM NAT, V166, pE95, DOI 10.1086/444403.</cited-reference>
+      <cited-reference>Thebault E, 2007, OIKOS, V116, P163, DOI 10.1111/j.2006.0030-1299.15007.x.</cited-reference>
+      <cited-reference>Thompson JN, 1997, ECOLOGICAL BASIS CON.</cited-reference>
+      <cited-reference>Tierney GL, 2009, FRONT ECOL ENVIRON, V7, P308, DOI 10.1890/070176.</cited-reference>
+      <cited-reference>Tilman D, 2001, SCIENCE, V294, P843, DOI 10.1126/science.1060391.</cited-reference>
+      <cited-reference>Tilman D, 1994, NATURE, V371, P65, DOI 10.1038/371065a0.</cited-reference>
+      <cited-reference>Todd BJ, 2006, BENTHIC HABITAT SUN.</cited-reference>
+      <cited-reference>Underwood AJ, 1989, TRENDS ECOL EVOL, V4, P16, DOI 10.1016/0169-5347(89)90008-6.</cited-reference>
+      <cited-reference>Vazquez DP, 2003, ECOL LETT, V6, P1077, DOI 10.1046/j.1461-0248.2003.00534.x.</cited-reference>
+      <cited-reference>Visconti P, 2010, BIOL CONSERV, V143, P756, DOI 10.1016/j.biocon.2009.12.018.</cited-reference>
+      <cited-reference>Vitousek PM, 1997, SCIENCE, V277, P494, DOI 10.1126/science.277.5325.494.</cited-reference>
+      <cited-reference>Vrijenhoek RC, 2010, MOL ECOL, V19, P4391, DOI 10.1111/j.1365-294X.2010.04789.x.</cited-reference>
+      <cited-reference>Walker B, 1999, ECOSYSTEMS, V2, P95, DOI 10.1007/s100219900062.</cited-reference>
+      <cited-reference>Walters C, 2001, CAN J FISH AQUAT SCI, V58, P39, DOI 10.1139/cjfas-58-1-39.</cited-reference>
+      <cited-reference>Watling L, 1998, CONSERV BIOL, V12, P1180, DOI 10.1046/j.1523-1739.1998.0120061180.x.</cited-reference>
+      <cited-reference>Westoby M, 1989, J RANGE MANAGE, V42, P266, DOI 10.2307/3899492.</cited-reference>
+      <cited-reference>Whittaker R H, 1972, Taxon, V21, P213, DOI 10.2307/1218190.</cited-reference>
+      <cited-reference>Wiens JA, 1989, FUNCT ECOL, V3, P385, DOI 10.2307/2389612.</cited-reference>
+      <cited-reference>Willis AJ, 1997, FUNCT ECOL, V11, P268, DOI 10.1111/j.1365-2435.1997.00081.x.</cited-reference>
+      <cited-reference>Yachi S, 1999, P NATL ACAD SCI USA, V96, P1463, DOI 10.1073/pnas.96.4.1463.</cited-reference>
+      <cited-reference>Yamano H, 2004, REMOTE SENS ENVIRON, V90, P86, DOI 10.1016/j.rse.2003.12.005.</cited-reference>
+      <cited-reference>Zhao HL, 2005, J ARID ENVIRON, V62, P309, DOI 10.1016/j.jaridenv.2004.11.009.</cited-reference>
+    </cited-references>
+    <urls>
+      <pdf-url />
+      <web-url>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0062111</web-url>
+    </urls>
+    <citation>Keith, D.A., Rodríguez, J.P., Rodríguez-Clark, K.M., Nicholson, E., Aapala, K., Alonso, A., Asmussen, M., Bachman, S., Basset, A., Barrow, E.G., Benson, J.S., Bishop, M.J., Bonifacio, R., Brooks, T.M., Burgman, M.A., Comer, P., Comín, F.A., Essl, F., Faber-Langendoen, D., Fairweather, P.G., Holdaway, R.J., Jennings, M., Kingsford, R.T., Lester, R.E., Nally, R. Mac, McCarthy, M.A., Moat, J., Oliveira-Miranda, M.A., Pisanu, P., Poulin, B., Regan, T.J., Riecken, U., Spalding, M.D., Zambrano-Martínez, S., 2013. Scientific Foundations for an IUCN Red List of Ecosystems.en. PLoS One 8. https://doi.org/10.1371/journal.pone.0062111</citation>
+    <file-location>
+      <domain />
+      <path />
+    </file-location>
+  </Ref-information>
+  <Ecosystem-Risk-Assessment-Content date="2019-11-04" status="completed" updated-by="AR">
+    <Risk-Assessment-Protocol>
+      <RAP-name>IUCN Red List of Ecosystems Category and Criteria</RAP-name>
+      <RAP-acronym>IUCN RLE</RAP-acronym>
+      <RAP-version>2.0</RAP-version>
+      <RAP-source>Keith et al. 2013</RAP-source>
+      <RAP-web-summary lang="en">The IUCN Red List of Ecosystems Categories and Criteria is a global standard for how we assess the conservation status of ecosystems, applicable at local, national, regional and global levels. The Red List of Ecosystems evaluates whether ecosystems have reached the final stage of degradation (a state of Collapse), whether they are threatened at Critically Endangered, Endangered or Vulnerable levels, or if they are not currently facing significant risk of collapse (Least Concern). It is based on a set of rules, or criteria, for performing evidence-based, scientific assessments of the risk of ecosystem collapse, as measured by reductions in geographical distribution or degradation of the key processes and components of ecosystems.</RAP-web-summary>
+    </Risk-Assessment-Protocol>
+    <Available-information>
+      <number-assessment-targets units="Ecosystems">20</number-assessment-targets>
+      <AT-list>yes</AT-list>
+      <AT-description>yes</AT-description>
+      <AT-maps>no</AT-maps>
+      <AT-spatial-data>no</AT-spatial-data>
+      <AT-images>no</AT-images>
+      <assessment-protocol-methods>no</assessment-protocol-methods>
+      <indicator-description>yes</indicator-description>
+      <indicator-results-description>yes</indicator-results-description>
+      <indicator-results-tables>yes</indicator-results-tables>
+      <indicator-results-figures>yes</indicator-results-figures>
+      <category-rationale>yes</category-rationale>
+      <category-tables>yes</category-tables>
+      <data-directory>no</data-directory>
+    </Available-information>
+  </Ecosystem-Risk-Assessment-Content>
+  <Content-Curations>
+    <content-curation date="" reviewer="" status="">
+      <edit-description>
+        <nodes-checked>
+          <node-checked name="">
+            <content-changes>
+              <content-change />
+            </content-changes>
+            <attribute-changes>
+              <attribute-change />
+            </attribute-changes>
+          </node-checked>
+        </nodes-checked>
+      </edit-description>
+    </content-curation>
+  </Content-Curations>
+</Reference>

@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
 DESCRIPCIÓN: 
-    Script para asignar el nodo 'cited-reference' a los ítems contenidos en el container
-    'cites-references' de los archivo 'xml' (Lista Roja de Ecosistemas).
+    Script para asignar el nodo 'nodename' a los ítems contenidos en el container
+    'parnt' de los archivo 'xml' (Lista Roja de Ecosistemas).
 
 PARÁMETROS
     - filename: nombre del archivo de entrada. Ver el ítem USO para más información.
@@ -38,8 +38,8 @@ import xml.etree.ElementTree as ET
 def setNodeToLine(filename, parent, nodename):
         
     # Definir estructura de los directorios de entrada y salida
-    inputDir  = 'xml/'
-    outputDir = 'new_outputs/' 
+    inputDir  = 'inputs/'
+    outputDir = 'outputs/' 
 
 
     # Importar el o los archivos .xml y obtener la estructura raíz de los datos
@@ -122,9 +122,10 @@ def indent(element, level = 0, more_sibs = False):
 
 """
 Ejemplo para todos los archivos en 'xml'
-"""
 
-xmls = os.listdir('xml')
+
+xmls = os.listdir('inputs/DT00')
 
 for xmlfile in xmls:
     setNodeToLine( xmlfile, 'cited-references', 'cited-reference' )
+"""

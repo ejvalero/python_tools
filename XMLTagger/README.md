@@ -13,20 +13,23 @@ Small package for easy management of elements and subelements contained in xml f
 - __How to use__: 
 
     1. Clone or download Python Tools repository. For cloning you can run
-    <br>
+
     ```sh
     git clone https://github.com/ejvalero/python.git
     ```
 
+
     2. Open the terminal and go to the XMLTagger directory:
-    <br>
+
     ```sh
     cd XMLTagger
     ```
+
     3. Put all your `.xml` files inside the `xml` directory located inside `inputs`.
 
+
     4. Run the following:
-    <br>
+
     ```sh
     python3 processFromXMLdir.py
     ```

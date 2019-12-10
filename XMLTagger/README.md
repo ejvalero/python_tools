@@ -10,7 +10,7 @@ Small package for easy management of elements and subelements contained in xml f
 - Input: `.xml` files with multi line text in any `parent` node.
 - Output: `.xml` files with subnodes `nodename` inside `parent`, replacing multiline text.
 - How to use: 
-    - Create a directory whith name `xml`.
-    - Put all `.xml` files inside the directory created before.
-    - Open the terminal (command prompt in Windows) and navigate to the root directory of `tagger.py` (`cd path-to-tagger.py-dir`)
-    - Run `python3 tagger.py`.
+    1. Create a directory whith name `xml`.
+    2. Put all `.xml` files inside the directory created before.
+    3. Open the terminal (command prompt in Windows) and navigate to the root directory of `tagger.py` (`cd path-to-tagger.py-dir`)
+    4. Run `python3 tagger.py`.

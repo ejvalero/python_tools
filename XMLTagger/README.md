@@ -6,7 +6,10 @@ Small package for easy management of elements and subelements contained in xml f
 ## Available functions
 
 ### `setNodeToLine`:
-- __Parameters__: `filename`(string), `parent`(string), `nodename`(string)
+- __Parameters__: 
+ - `filename`(string) 
+ - `parent`(string)
+ - `nodename`(string)
 - __Description__: for any file with name `filename`, look for all elements with `parent` tag and add inside them as many `nodename` elements as lines have them.
 - __Input__: `.xml` files with multi line text in any `parent` node.
 - __Output__: `.xml` files with subnodes `nodename` inside `parent`, replacing multiline text.

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Reference>
+    <Ref-information date="2019-10-18" updated-by="AR" status="completed">
+      <ref-label>Murray_TidalFlats_2015</ref-label>
+      <authors>
+        <author name="Murray, Nicholas J.">
+          <affiliations>
+            <affiliation>Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, University of New SouthWales, Sydney 2052.</affiliation>
+          <affiliation>Climate Adaptation Flagship and Ecosystem Sciences, CSIRO, Dutton Park, Queensland.</affiliation>
+          <affiliation>School of Biological Sciences, The University of Queensland, St Lucia, Queensland, Australia.</affiliation>
+          </affiliations>
+        </author>
+        <author name="Ma, Zhijun">
+          <affiliations>
+          <affiliation>Ministry of Education Key Laboratory for Biodiversity Science and Ecological Engineering, Institute of Biodiversity Science, Fudan University, Shanghai, China.</affiliation>
+          </affiliations>
+        </author>
+        <author name="Fuller, Richard A.">
+          <affiliations>
+          <affiliation>School of Biological Sciences, The University of Queensland, St Lucia, Queensland, Australia.</affiliation>
+          </affiliations>
+          </author>
+      </authors>
+      <editors/>
+      <ref-titles>
+        <ref-title lang="en">Tidal flats of the Yellow Sea: A review of ecosystem status and anthropogenic threats</ref-title>
+    </ref-titles>
+      <journal>Austral Ecology</journal>
+      <book-title/>
+      <year>2015</year>
+      <volume>40</volume>
+      <number>4</number>
+      <pages>472-481</pages>
+      <month>06</month>
+    <abstracts>
+      <abstract lang="en">Tidal flats provide ecosystem services to billions of people worldwide, yet their changing status is largely unknown. In the Yellow Sea region of East Asia, tidal flats are the principal coastal ecosystem fringing more than 4000km of the coastlines of China, North Korea and South Korea. However, widespread loss of areal extent, increasing frequency of algal blooms, hypoxic dead zones and jellyfish blooms, and declines of commercial fisheries and migratory bird populations suggest that this ecosystem is degraded and declining. Here, we apply the International Union for Conservation of Nature Red List of Ecosystems criteria to the Yellow Sea tidal flat ecosystem and determine that its status is endangered. Comparison of standardized remotely sensed habitat data and historic topographic map data indicated that in the last 50 years, a decline of more than 50\% but less than 80\% of tidal flat extent has occurred (criterion A1). Although restricted to a narrow band along the coastline, Yellow Sea tidal flats are sufficiently broadly distributed to be classified as least concern under criterion B. However, widespread pollution, algal blooms and declines of invertebrate and vertebrate fauna across the region result in a classification of endangered (C1, D1). Owing to the lack of long-term monitoring data and the unknown impacts of severe biotic and abiotic change, the ecosystem was scored as data deficient for Criterion E and several subcriteria. Our assessment demonstrates an urgent need to arrest the decline of the Yellow Sea tidal flat ecosystem, which could be achieved by (i) improved coastal planning and management at regional and national levels, (ii) expansion of the coastal protected area network, and (iii) improved managed of existing protected areas to reduce illegal land reclamation and coastal exploitation</abstract>
+    </abstracts>
+      <publisher>Wiley Blackwell</publisher>
+      <address>111 River ST, Hoboken07030-5774, NJ USA.</address>
+      <type>Article</type>
+      <language>English</language>
+      <DOI>10.1111/aec.12211</DOI>
+      <ISSN>1442-9985</ISSN>
+      <EISSN>1442-9993</EISSN>
+      <keywords>
+        <keyword>Coastal wetland</keyword>
+         <keyword>Ecosystem decline</keyword> 
+         <keyword>IUCN Red List of Ecosystem</keyword>
+          <keyword>Risk  assessment habitat loss</keyword>
+         <keyword>Wetland status</keyword>
+      </keywords>
+      <research-areas>
+        <research-area>Environmental Sciences \and Ecology</research-area>
+      </research-areas>
+      <author-email>murr.nick@gmail.com</author-email>
+      <funding-acknowledgement>Australian Research Council Linkage Grant {[}LP100200418]; Queensland of Environment and Heritage Protection; Commonwealth Department of the Environment; Queensland Wader Study Group; Port of Brisbane Pty Ltd.; Birds Queensland; ARC Centre of Excellence for Environmental Decisions; CSIRO Climate Adaptation Flagship.</funding-acknowledgement>
+      <funding-text>We thank R. Ferrari, C.Y. Choi, R. Clemens, D. Melville and D. Watkins for assistance with this project. This work was supported by an Australian Research Council Linkage Grant LP100200418, co-funded by the Queensland Department of Environment and Heritage Protection, the Commonwealth Department of the Environment, the Queensland Wader Study Group and the Port of Brisbane Pty Ltd. Additional support was provided by Birds Queensland, the ARC Centre of Excellence for Environmental Decisions and the CSIRO Climate Adaptation Flagship.</funding-text>
+      <cited-references>Ahn Iy, 1995, MAR POLLUT BULL, V30, P200, DOI 10.1016/0025-326X(94)00125-S.
+      Amano T, 2010, BIOL CONSERV, V143, P2238, DOI 10.1016/j.biocon.2010.06.010.
+      An SQ, 2007, WEED RES, V47, P183, DOI 10.1111/j.1365-3180.2007.00559.x.
+      An SQ, 2007, AMBIO, V36, P335, DOI 10.1579/0044-7447(2007)36{[}335:CNWPPC]2.0.CO;2.
+      Barter M. A., 2002, WETLANDS INT GLOBAL, V9.
+      Beck MW, 2011, BIOSCIENCE, V61, P107, DOI 10.1525/bio.2011.61.2.5.
+      Beck MW, 2001, BIOSCIENCE, V51, P633, DOI 10.1641/0006-3568(2001)051{[}0633:TICAMO]2.0.CO;2.
+      Bi NH, 2014, CONT SHELF RES, V90, P70, DOI 10.1016/j.csr.2014.02.014.
+      Bi XL, 2011, OCEAN COAST MANAGE, V54, P256, DOI 10.1016/j.ocecoaman.2010.12.005.
+      Bird E, 2010, ENCY WORLDS COASTAL.
+      CCICED, 2010, SUST DEV CHIN OC COA.
+      Cho DO, 2003, COAST MANAGE, V31, P99, DOI 10.1080/08920750390168327.
+      Choi CY, 2014, WETLANDS, V34, P1085, DOI 10.1007/s13157-014-0568-4.
+      Choi KH, 2010, J OCEANOGR, V66, P307, DOI 10.1007/s10872-010-0027-7.
+      Craft C, 2009, FRONT ECOL ENVIRON, V7, P73, DOI 10.1890/070219.
+      Dennis B, 2011, BIOL INVASIONS, V13, P401, DOI 10.1007/s10530-010-9834-4.
+      Diaz RJ, 2008, SCIENCE, V321, P926, DOI 10.1126/science.1156401.
+      Dong ZJ, 2010, MAR POLLUT BULL, V60, P954, DOI 10.1016/j.marpolbul.2010.04.022.
+      Gan XJ, 2009, ESTUAR COAST SHELF S, V83, P211, DOI 10.1016/j.ecss.2009.03.026.
+      He Q, 2014, SCI REP-UK, V4, DOI 10.1038/srep05995.
+      Healy T., 2002, MUDDY COASTS WORLD P.
+      Higgins S, 2013, GEOPHYS RES LETT, V40, P3898, DOI 10.1002/grl.50758.
+      IUCN, 2012, GUID APPL IUCN RED L.
+      IUCN, 2012, HAB CLASS SCHEM VERS.
+      Iwamura T, 2013, P ROY SOC B-BIOL SCI, V280, DOI 10.1098/rspb.2013.0325.
+      Keith DA, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0062111.
+      Kirwan ML, 2011, GEOLOGY, V39, P507, DOI 10.1130/G31789.1.
+      Kuwae T, 2012, ECOL LETT, V15, P347, DOI 10.1111/j.1461-0248.2012.01744.x.
+      Liu DY, 2009, MAR POLLUT BULL, V58, P888, DOI 10.1016/j.marpolbul.2009.01.013.
+      Liu JY, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0050719.
+      Liu JG, 2005, NATURE, V435, P1179, DOI 10.1038/4351179a.
+      Lu JB, 2013, ECOL ENG, V52, P175, DOI 10.1016/j.ecoleng.2012.12.107.
+      Luo H, 2014, ECOL EVOL, V4, P3027, DOI 10.1002/ece3.1152.
+      Ma ZJ, 2014, SCIENCE, V346, P912, DOI 10.1126/science.1257258.
+      Ma ZJ, 2009, ENVIRON MANAGE, V43, P1187, DOI 10.1007/s00267-008-9247-7.
+      Ma ZJ, 2003, ECOL RES, V18, P321, DOI 10.1046/j.1440-1703.2003.00557.x.
+      MacKinnon J, 2012, 47 IUCN.
+      Millennium Ecosystem Assessment, 2005, ECOSYSTEMS HUMAN WEL.
+      Murray NJ, 2014, FRONT ECOL ENVIRON, V12, P267, DOI 10.1890/130260.
+      Murray NJ, 2012, REMOTE SENS-BASEL, V4, P3417, DOI 10.3390/rs4113417.
+      Neira C, 2006, ECOL APPL, V16, P1391, DOI 10.1890/1051-0761(2006)016{[}1391:MGMOBF]2.0.CO;2.
+      Rodriguez JP, 2015, PHILOS T R SOC B, V370, DOI 10.1098/rstb.2014.0003.
+      Sato M, 2004, Ecological Issues in a Changing World: Status, Response and Strategy, P135, DOI 10.1007/978-1-4020-2689-8\_9.
+      Seto KC, 2012, P NATL ACAD SCI USA, V109, P16083, DOI 10.1073/pnas.1211658109.
+      Spalding MD, 2007, BIOSCIENCE, V57, P573, DOI 10.1641/B570707.
+      Strong DR, 2013, ANNU REV ECOL EVOL S, V44, P389, DOI 10.1146/annurev-ecolsys-110512-135803.
+      Syvitski JPM, 2009, NAT GEOSCI, V2, P681, DOI 10.1038/NGEO629.
+      Syvitski JPM, 2005, SCIENCE, V308, P376, DOI 10.1126/science.1109454.
+      Szabo JK, 2012, BIOL CONSERV, V148, P61, DOI 10.1016/j.biocon.2012.01.062.
+      UNDP/GEF, 2007, YELL SEA AN ENV STAT.
+      Wang HJ, 2010, J HYDROL, V391, P302, DOI 10.1016/j.jhydrol.2010.07.030.
+      Wang X, 2010, ECOL ECON, V69, P2549, DOI 10.1016/j.ecolecon.2010.07.031.
+      Wang Y, 1987, CONT SHELF RES, V7, P329, DOI 10.1016/0278-4343(87)90104-X.
+      Wang YP, 2014, CONT SHELF RES, V90, P79, DOI 10.1016/j.csr.2014.02.005.
+      Wang YP, 2012, MAR GEOL, V291, P147, DOI 10.1016/j.margeo.2011.01.004.
+      Wilson HB, 2011, CONSERV BIOL, V25, P758, DOI 10.1111/j.1523-1739.2011.01670.x.
+      Wong P. P, 2007, CLIMATE CHANGE, P315, DOI DOI 10.1017/CB09781107415379.
+      Yang SL, 2006, GEOPHYS RES LETT, V33, DOI 10.1029/2005GL025507.
+      Yang SL, 2005, J GEOPHYS RES-EARTH, V110, DOI 10.1029/2004JF000271.
+      Yu HM, 1994, OCEAN COAST MANAGE, V25, P161, DOI 10.1016/0964-5691(94)90054-X.
+      Zhang RS, 2004, ECOL ENG, V23, P95, DOI 10.1016/j.ecoleng.2004.07.007.
+      Zhou HX, 2009, ECOL ENG, V35, P521, DOI 10.1016/j.ecoleng.2008.06.007</cited-references>
+      <urls>
+      <pdf-url>https://www.fullerlab.org/wp-content/uploads/2015/01/Murray-et-al-2015.pdf</pdf-url>
+      <web-url/>
+      </urls>
+      <citation>Murray, N.J., Ma, Z., Fuller, R.A., 2015. Tidal flats of the Yellow Sea: A review of ecosystem status and anthropogenic threats. Austral Ecol. 40, 472-481. https://doi.org/10.1111/aec.12211.</citation>
+      <file-location>
+       <domain></domain>
+       <path></path>
+      </file-location>
+    </Ref-information>
+    <Ecosystem-Risk-Assessment-Content date="2019-10-18" updated-by="AR" status="completed">
+      <Risk-Assessment-Protocol>
+        <RAP-name>IUCN Red List of Ecosystems Category and Criteria</RAP-name>
+        <RAP-acronym>IUCN RLE</RAP-acronym>
+        <RAP-version>2.0</RAP-version>
+        <RAP-source>Keith et al. 2013</RAP-source>
+        <RAP-web-summary lang="en">The IUCN Red List of Ecosystems Categories and Criteria is a global standard for how we assess the conservation status of ecosystems, applicable at local, national, regional and global levels. The Red List of Ecosystems evaluates whether ecosystems have reached the final stage of degradation (a state of Collapse), whether they are threatened at Critically Endangered, Endangered or Vulnerable levels, or if they are not currently facing significant risk of collapse (Least Concern). It is based on a set of rules, or criteria, for performing evidence-based, scientific assessments of the risk of ecosystem collapse, as measured by reductions in geographical distribution or degradation of the key processes and components of ecosystems.</RAP-web-summary>
+      </Risk-Assessment-Protocol>
+      <Available-information>
+        <number-assessment-targets units="Ecosystems">1</number-assessment-targets>
+        <AT-list>no</AT-list>
+        <AT-description>yes</AT-description>
+        <AT-maps>yes</AT-maps>
+        <AT-spatial-data>no</AT-spatial-data>
+        <AT-images>yes</AT-images>
+        <assessment-protocol-methods>yes</assessment-protocol-methods>
+        <indicator-description>yes</indicator-description>
+        <indicator-results-description>yes</indicator-results-description>
+        <indicator-results-tables>yes</indicator-results-tables>
+        <indicator-results-figures>yes</indicator-results-figures>
+        <category-rationale>yes</category-rationale>
+        <category-tables>yes</category-tables>
+        <data-directory>no</data-directory>
+      </Available-information>
+    </Ecosystem-Risk-Assessment-Content>
+    <Content-Curations>
+      <content-curation date="" reviewer="" status="">
+        <edit-description>
+          <nodes-checked>
+            <node-checked name="">
+              <content-changes>
+                <content-change></content-change>
+              </content-changes>
+              <attribute-changes>
+                <attribute-change></attribute-change>
+              </attribute-changes>
+            </node-checked>
+          </nodes-checked>
+        </edit-description>
+      </content-curation>
+    </Content-Curations>
+</Reference>

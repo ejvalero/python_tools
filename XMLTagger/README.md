@@ -12,5 +12,5 @@ Small package for easy management of elements and subelements contained in xml f
 - How to use: 
     1. Create a directory whith name `xml`.
     2. Put all `.xml` files inside the directory created before.
-    3. Open the terminal (command prompt in Windows) and navigate to the root directory of `tagger.py` (`cd path-to-tagger.py-dir`)
+    3. Open the terminal and go to the root directory of `tagger.py` (`cd path-to-tagger.py-dir`)
     4. Run `python3 tagger.py`.

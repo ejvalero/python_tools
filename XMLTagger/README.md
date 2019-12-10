@@ -23,7 +23,7 @@ Small package for easy management of elements and subelements contained in xml f
 
     2. Open the terminal and go to the XMLTagger directory:
 
-    ```sh
+    ```console
     cd python_tools/XMLTagger
     ```
 
@@ -31,11 +31,11 @@ Small package for easy management of elements and subelements contained in xml f
 
     4. Run the following:
 
-    ```sh
+    ```console
     python3 processFromXMLdir.py
     ```
 
 
 ## Python Compatibility
 
-XMLTager is compatible only with Python 3. Python 2 is not supported.
+XMLTagger is compatible only with Python 3. Python 2 is not supported.

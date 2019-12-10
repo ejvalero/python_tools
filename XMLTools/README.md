@@ -1,4 +1,4 @@
-# XML Tools
+# XMLTools
 
 Small package for easy management of elements and subelements contained in xml files.
 

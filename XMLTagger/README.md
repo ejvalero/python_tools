@@ -10,7 +10,13 @@ Small package for easy management of elements and subelements contained in xml f
 - __Input__: `.xml` files with multi line text in any `parent` node.
 - __Output__: `.xml` files with subnodes `nodename` inside `parent`, replacing multiline text.
 - __How to use__: 
-    0. Clone or download Python XMLTagger
+
+    0. Clone or download Python Tools repository. For cloning you can run
+
+    ```sh
+    git clone https://github.com/ejvalero/python.git
+    ```
+
     1. Open the terminal and go to the XMLTagger directory:
     ```sh
     cd XMLTagger

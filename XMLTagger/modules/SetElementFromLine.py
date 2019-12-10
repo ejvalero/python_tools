@@ -35,7 +35,8 @@ def setNodeToLine(filename, parent, nodename):
             childrenCount = str( len(citedReferences.getchildren()) )
             print( 
                 '---',
-                'WARNING: ' + childrenCount + ' nodes tagged as "' + childrenNames + '" were changed to ' + nodename,
+                'WARNING: ' + childrenCount + ' nodes tagged as "' + 
+                childrenNames + '" were changed to ' + nodename,
                 '---'
             )
 
@@ -65,19 +66,22 @@ def setNodeToLine(filename, parent, nodename):
 
     # Export xml outputs to root path defined in 'outputDir'
     
+    pathfile = filename.split('/')
+
     if not os.path.exists(outputDir):
-        subdir = filename.split('/')[0]
         
-        if subdir is not None:
-            os.makedirs(outputDir + subdir + '/')
+        if pathfile[0] is not None:
+            os.makedirs(outputDir + 'setNodeToLine/')
         else:
             os.makedirs(outputDir)
 
-    output = outputDir + filename
+    output = outputDir + 'setNodeToLine/' + pathfile[1]
 
     root = tree.getroot()
     indent(root)
     tree.write(output, encoding='utf-8')
+
+
 
 """
 Formatear identación de los archivos, de acuerdo con su estructura

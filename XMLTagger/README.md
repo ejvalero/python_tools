@@ -23,7 +23,7 @@ Small package for easy management of elements and subelements contained in xml f
 
     2. Open the terminal and go to the XMLTagger directory:
 
-    ```console
+    ```bash
     cd python_tools/XMLTagger
     ```
 
@@ -31,7 +31,7 @@ Small package for easy management of elements and subelements contained in xml f
 
     4. Run the following:
 
-    ```console
+    ```bash
     python3 processFromXMLdir.py
     ```
 

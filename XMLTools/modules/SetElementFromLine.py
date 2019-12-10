@@ -18,7 +18,8 @@ def setNodeToLine(filename, parent, nodename):
         
     # Define structure of input and output directories
     inputDir  = 'inputs/'
-    outputDir = 'outputs/' 
+    outputDir = 'outputs/'
+    pathfile  = filename.split('/')
 
 
     # Import .xml file and get root of the tree
@@ -35,8 +36,8 @@ def setNodeToLine(filename, parent, nodename):
             childrenCount = str( len(citedReferences.getchildren()) )
             print( 
                 '---',
-                'WARNING: ' + childrenCount + ' nodes tagged as "' + 
-                childrenNames + '" were changed to ' + nodename,
+                'WARNING: ' + childrenCount + ' <'+ childrenNames + '> nodes in "' + 
+                pathfile[1] + '" were changed to <' + nodename + '>',
                 '---'
             )
 
@@ -65,9 +66,6 @@ def setNodeToLine(filename, parent, nodename):
 
 
     # Export xml outputs to root path defined in 'outputDir'
-    
-    pathfile = filename.split('/')
-
     if not os.path.exists(outputDir):
         
         if pathfile[0] is not None:

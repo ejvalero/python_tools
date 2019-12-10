@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 import os, sys
 path_modules = os.path.abspath('modules')
 sys.path.append( path_modules )

@@ -24,7 +24,7 @@ Small package for easy management of elements and subelements contained in xml f
     2. Open the terminal and go to the XMLTagger directory:
 
     ```sh
-    cd XMLTagger
+    cd python_tools/XMLTagger
     ```
 
     3. Put all your `.xml` files inside the `xml` directory located inside `inputs`.

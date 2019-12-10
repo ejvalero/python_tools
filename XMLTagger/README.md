@@ -2,6 +2,12 @@
 
 Small package for easy management of elements and subelements contained in xml files.
 
+
+## Python Compatibility
+
+XMLTager is compatible only with Python 3. Python 2 is not supported.
+
+
 ## Available functions
 
 ### `setNodeToLine`:

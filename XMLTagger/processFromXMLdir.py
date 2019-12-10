@@ -4,7 +4,7 @@
 import os, sys
 path_modules = os.path.abspath('modules')
 sys.path.append( path_modules )
-from tagger import setNodeToLine
+from SetElementFromLine import setNodeToLine
 
 
 xmls = os.listdir('inputs/xml')
@@ -14,5 +14,7 @@ for xmlfile in xmls:
     setNodeToLine( xmlfile, 'cited-references', 'cited-reference' )
 
 print(
-    'SUCCESS: ' + str( len(xmls) ) + ' .xml files processed and outputs saved in outputs/xml'
+    '---',
+    'SUCCESS: ' + str( len(xmls) ) + ' .xml files processed and outputs saved in outputs/xml',
+    '---'
 )

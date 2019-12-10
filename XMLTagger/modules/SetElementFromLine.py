@@ -2,32 +2,11 @@
 # -*- coding: utf-8 -*-
 
 """
-DESCRIPCIÓN: 
-    Script para asignar el nodo 'nodename' a los ítems contenidos en el container
-    'parnt' de los archivo 'xml' (Lista Roja de Ecosistemas).
-
-PARÁMETROS
-    - filename: nombre del archivo de entrada. Ver el ítem USO para más información.
-
-USO:
-    - Crear un directorio 'xml' en la misma carpeta donde se donde se encuentra el script 
-    'tagger.py'
-
-    - Colocar los archivos originales en formata .xml en '/xml'
-
-    - Ejecutar en una terminal: 
-        > cd ruta-donde-se-ubica-tagger.py. 
-        > tagger.py
-
-    Los archivos resultantes se guardarán en el directorio 'outputs', con el mismo nombre de
-    los archivos de entrada.
-
 AUTOR: 
     Emanuel Valero - Provita
 
 ÚLTIMA ACTUALIZACIÓN:
     2019-12-03
-
 """
 
 
@@ -37,29 +16,33 @@ import xml.etree.ElementTree as ET
 
 def setNodeToLine(filename, parent, nodename):
         
-    # Definir estructura de los directorios de entrada y salida
+    # Define structure of input and output directories
     inputDir  = 'inputs/'
     outputDir = 'outputs/' 
 
 
-    # Importar el o los archivos .xml y obtener la estructura raíz de los datos
+    # Import .xml file and get root of the tree
     tree = ET.parse(inputDir + filename)
 
 
-    # Encontrar todos los containers identificados con 'cited-references'. 
-    # Luego, para cada línea de texto en ellos, asignar el nodo definido en 'nodename'
+    # Find all containers whose tags matches with 'parent' parameter. 
+    # Then, for each text line in them, assign node with name equals to 'nodename'
     for citedReferences in tree.findall('.//' + parent):
 
-        # Detectar y renombrar nodos exitentes
+        # Detect and rename existent nodes
         if len(citedReferences) > 0:
             childrenNames = citedReferences[0].tag
             childrenCount = str( len(citedReferences.getchildren()) )
-            print( 'WARNING: ' + childrenCount + ' nodes tagged as "' + childrenNames + '" were changed to ' + nodename )
+            print( 
+                '---',
+                'WARNING: ' + childrenCount + ' nodes tagged as "' + childrenNames + '" were changed to ' + nodename,
+                '---'
+            )
 
             for cited in citedReferences:
                 cited.tag = nodename
 
-        # Agregar nodename a cada línea de texto en cited-references
+        # Set nodename to each text line inside 'parent'
         childText = citedReferences.text
 
         if childText is not None:
@@ -80,7 +63,7 @@ def setNodeToLine(filename, parent, nodename):
                     citedReferences.insert(1, ct)
 
 
-    # Exportar archivos con la nueva estructura a la ruta definida en la variable 'outputDir'
+    # Export xml outputs to root path defined in 'outputDir'
     
     if not os.path.exists(outputDir):
         subdir = filename.split('/')[0]

@@ -18,7 +18,6 @@ Small package for easy management of elements and subelements contained in xml f
     git clone https://github.com/ejvalero/python.git
     ```
 
-
     2. Open the terminal and go to the XMLTagger directory:
 
     ```sh
@@ -26,7 +25,6 @@ Small package for easy management of elements and subelements contained in xml f
     ```
 
     3. Put all your `.xml` files inside the `xml` directory located inside `inputs`.
-
 
     4. Run the following:
 

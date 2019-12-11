@@ -69,11 +69,11 @@ def setNodeToLine(filename, parent, nodename):
     if not os.path.exists(outputDir):
         
         if pathfile[0] is not None:
-            os.makedirs(outputDir + 'setNodeToLine/')
+            os.makedirs(outputDir + 'setElementFromLine/')
         else:
             os.makedirs(outputDir)
 
-    output = outputDir + 'setNodeToLine/' + pathfile[1]
+    output = outputDir + 'setElementFromLine/' + pathfile[1]
 
     root = tree.getroot()
     indent(root)

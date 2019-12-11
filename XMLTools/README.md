@@ -27,7 +27,7 @@ Small package for easy management of elements and subelements contained in xml f
     cd python_tools/XMLTools
     ```
 
-    3. Put all your `.xml` files inside the `xml` directory located inside `inputs`.
+    3. Put all your `.xml` files inside the `xml` directory located in `inputs`.
 
     4. Run the following:
 

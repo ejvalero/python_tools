@@ -12,7 +12,7 @@ AUTOR:
 import os, io
 import xml.etree.ElementTree as ET
 
-def setAttrbute(filename, parent, attribute, verbose = False):
+def setAttrbute(filename, parent, attribute):
 
     # Define structure of input and output directories
     inputDir  = 'inputs/'

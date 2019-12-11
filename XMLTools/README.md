@@ -21,10 +21,10 @@ Small package for easy management of elements and subelements contained in xml f
     git clone https://github.com/ejvalero/python.git
     ```
 
-    2. Open the terminal and go to the XMLTagger directory:
+    2. Open the terminal and go to the XMLTools directory:
 
     ```sh
-    cd python_tools/XMLTagger
+    cd python_tools/XMLTools
     ```
 
     3. Put all your `.xml` files inside the `xml` directory located inside `inputs`.
@@ -38,4 +38,4 @@ Small package for easy management of elements and subelements contained in xml f
 
 ## Python Compatibility
 
-XMLTagger is compatible only with Python 3. Python 2 is not supported.
+XMLTools is compatible only with Python 3. Python 2 is not supported.

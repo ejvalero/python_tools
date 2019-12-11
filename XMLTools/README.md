@@ -5,7 +5,7 @@ Small package for easy management of elements and subelements contained in xml f
 
 ## Available functions
 
-### `setNodeToLine`:
+### `setElementFromLine`:
 - __Parameters__: 
  - `filename`(string) 
  - `parent`(string)

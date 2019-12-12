@@ -28,24 +28,24 @@ def setNodeToLine(filename, parent, nodename):
 
     # Find all containers whose tags matches with 'parent' parameter. 
     # Then, for each text line in them, assign node with name equals to 'nodename'
-    for citedReferences in tree.findall('.//' + parent):
+    for child in tree.findall('.//' + parent):
 
         # Detect and rename existent nodes
-        if len(citedReferences) > 0:
-            childrenNames = citedReferences[0].tag
-            childrenCount = str( len(citedReferences.getchildren()) )
+        if len(child) > 0:
+            childName = child[0].tag
+            childrenCount = str( len(child.getchildren()) )
             print( 
                 '---',
-                'WARNING: ' + childrenCount + ' <'+ childrenNames + '> nodes in "' + 
+                'WARNING: ' + childrenCount + ' <'+ childName + '> nodes in "' + 
                 pathfile[1] + '" were changed to <' + nodename + '>',
                 '---'
             )
 
-            for cited in citedReferences:
+            for cited in child:
                 cited.tag = nodename
 
         # Set nodename to each text line inside 'parent'
-        childText = citedReferences.text
+        childText = child.text
 
         if childText is not None:
             childText = ' '.join(filter(None, childText.split(' ')))
@@ -61,8 +61,8 @@ def setNodeToLine(filename, parent, nodename):
                 if line is not '':
                     ct = ET.Element(nodename)
                     ct.text = line
-                    citedReferences.text = ''
-                    citedReferences.insert(1, ct)
+                    child.text = ''
+                    child.insert(1, ct)
 
 
     # Export xml outputs to root path defined in 'outputDir'

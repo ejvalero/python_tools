@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-AUTOR: 
+AUTHOR:
     Emanuel Valero - Provita
 
-ÚLTIMA ACTUALIZACIÓN:
+LATEST UPDATE:
     2019-12-03
 """
 

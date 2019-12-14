@@ -14,41 +14,44 @@ import xml.etree.ElementTree as ET
 
 def setAttribute(filename, parent, nodename, attribute, value, position = 'All'):
 
-    # Define structure of input and output directories
+    # Define input and output directories, and typefile
     inputDir  = '../inputs/'
     outputDir = 'outputs/'
-
-    # Import .xml file and get root of the tree
-
     typefile = type( filename )
 
     try:
+        
+        # Import .xml file and get root of the tree
         if typefile is str and filename.count('\n') is 0:
             tree = ET.parse(inputDir + filename)
-                
+        
         elif 'xml.etree.ElementTree' in str( typefile ):
             tree = filename
 
-        parent = tree.findall( './/' + parent + '/' + nodename)
-        itemscount = len(parent)
+
+        # Define node path
+        nodepath = './/' + parent + '/' + nodename
+
+        if position is not 'All':
+            nodepath = nodepath + '[' + str(position) + ']'
 
 
-        if position is 'All':
+        # Setting attributes
+        parentElement = tree.findall( nodepath )
 
-            for child in parent:
-                child.set('completed', 'yes')
+        for child in parentElement:
+            child.set('completed', value)
 
-                print( child.get('completed'))
-            
-        else:
-            for child in parent:
-                child.set('completed', 'no')
+        # Diplay message to console
+        message = str( len(parentElement) ) + ' nodes assigned with attr ' + \
+                  attribute + '="' + value + '" inside ' + '<' + parent + '>'
         
-                print( child.get('completed'))
+        print('---', 'MESSAGE: ' + message, '---')
 
     
     except:
         print('ERROR: Invalid filename')
+        sys.exit(1)
   
 
 """
@@ -56,5 +59,5 @@ Implementation
 """
 
 
-xmlfile = 'DT00/dummy.xml'
-setAttribute(xmlfile, 'catalog', 'book', 'completed', 'yes', position=1)
+xmlfile = '../inputs/DT00/dummy.xml'
+setAttribute(xmlfile, 'catalog', 'book', 'completed', 'yes')

@@ -13,13 +13,13 @@ import os, sys, uuid
 import xml.etree.ElementTree as ET
 
 def setAttribute(filename, parent, nodename, attribute, value, 
-                 outputFile = None, position = 'All'):
+                 nodeposition = 'All'):
 
     # Define input and output directories, and typefile
     inputDir  = '../inputs/'
     outputDir = '../outputs/setAttributeToElement/'
     typefile = type( filename )
-    position = str(position)
+    nodeposition = str(nodeposition)
 
     try:
         # Import .xml file and get root of the tree
@@ -33,8 +33,8 @@ def setAttribute(filename, parent, nodename, attribute, value,
         # Define node path for edit
         nodepath = './/' + parent + '/' + nodename
 
-        if position is not 'All':
-            nodepath = nodepath + '[' + position + ']'
+        if nodeposition is not 'All':
+            nodepath = nodepath + '[' + nodeposition + ']'
 
 
         # Setting attributes
@@ -48,18 +48,24 @@ def setAttribute(filename, parent, nodename, attribute, value,
         message = str( len(parentElement) ) + ' nodes assigned with attr ' + \
                   attribute + '="' + value + '" inside ' + '<' + parent + '>'
 
-        if position is not 'All':
-            message = message + ', position ' + position
+        if nodeposition is not 'All':
+            message = message + ', position ' + nodeposition
         
         print('---', 'MESSAGE: ' + message, '---')
 
 
         # Save updated xml files
-        if outputFile is None or outputFile is '':
-            output = outputDir + str(uuid.uuid4()) + '.xml'
-        
+        if not os.path.exists( outputDir ):
+            os.makedirs( outputDir )
+
+        if typefile is str and filename.count('\n') is 0:
+            pathfile  = filename.split('/')    
+            os.makedirs( outputDir + pathfile[0])
+            output = outputDir + filename
+
         else:
-            output = outputDir + outputFile
+            output = outputDir + str(uuid.uuid4()) + '.xml'
+
 
         tree.write(output, encoding='utf-8')
 
@@ -73,7 +79,7 @@ def setAttribute(filename, parent, nodename, attribute, value,
 Implementation
 """
 
-xmlfile = 'xml/Bland_MesoAmericaReef_2017.xml'
-setAttribute(xmlfile, 'authors', 'author', 
-             'completed', 'yes', position = 1, 
-             outputFile='Bland_MesoAmericaReef_2017.xml')
+xmlfile = 'DT00/dummy.xml'
+
+setAttribute(xmlfile, 'catalog', 'book', 
+             'completed', 'yes', nodeposition = 2)

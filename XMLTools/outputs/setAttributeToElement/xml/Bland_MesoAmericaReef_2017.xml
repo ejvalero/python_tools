@@ -2,13 +2,13 @@
     <Ref-information date="2019-10-16" status="completed" updated-by="AR">
       <ref-label>Bland_MesoAmericaReef_2017</ref-label>
       <authors>
-        <author completed="yes" name="Bland, Lucie M.">
+        <author name="Bland, Lucie M.">
           <affiliations>
             <affiliation>Deakin University, Australia, School of Life and Environmental Sciences, Centre for Integrative Ecology, Burwood, 3121, Victoria, Australia.</affiliation>
             <affiliation>School of BioSciences, The University of Melbourne, Parkville, 3010, Victoria, Australia.</affiliation>
           </affiliations>
         </author>
-        <author name="Regan, Tracey J.">
+        <author completed="yes" name="Regan, Tracey J.">
           <affiliations>
             <affiliation>The Arthur Rylah Institute for Environmental Research, the Department of Environment, Land, Water and Planning, 123 Brown Street, Heidelberg, 3084, Victoria, Australia.</affiliation>
           </affiliations>

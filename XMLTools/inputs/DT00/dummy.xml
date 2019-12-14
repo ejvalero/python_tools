@@ -2,7 +2,9 @@
 <library>
    <address>
       <book id="abk001">
-         <author>Gambardella, Matthew</author>
+         <authors>
+            <author>Gambardella, Matthew</author>
+         </authors>
          <title>XML Developer's Guide</title>
          <genre>Computer</genre>
          <price>44.95</price>
@@ -23,7 +25,9 @@
    </address>
    <catalog>
       <book id="bk101">
-         <author>Gambardella, Matthew</author>
+         <authors>
+            <author>Gambardella, Matthew</author>
+         </authors>
          <title>XML Developer's Guide</title>
          <genre>Computer</genre>
          <price>44.95</price>
@@ -32,7 +36,9 @@
          with XML.</description>
       </book>
       <book id="bk102">
-         <author>Ralls, Kim</author>
+         <authors>
+            <author>Ralls, Kim</author>
+         </authors>
          <title>Midnight Rain</title>
          <genre>Fantasy</genre>
          <price>5.95</price>
@@ -42,7 +48,9 @@
          of the world.</description>
       </book>
       <book id="bk103">
-         <author>Corets, Eva</author>
+         <authors>
+            <author>Corets, Eva</author>
+         </authors>
          <title>Maeve Ascendant</title>
          <genre>Fantasy</genre>
          <price>5.95</price>
@@ -52,7 +60,9 @@
          foundation for a new society.</description>
       </book>
       <book id="bk104">
-         <author>Corets, Eva</author>
+         <authors>
+            <author>Corets, Eva</author>
+         </authors>
          <title>Oberon's Legacy</title>
          <genre>Fantasy</genre>
          <price>5.95</price>
@@ -63,7 +73,9 @@
          Ascendant.</description>
       </book>
       <book id="bk105">
-         <author>Corets, Eva</author>
+         <authors>
+            <author>Corets, Eva</author>
+         </authors>
          <title>The Sundered Grail</title>
          <genre>Fantasy</genre>
          <price>5.95</price>
@@ -73,7 +85,9 @@
          Oberon's Legacy.</description>
       </book>
       <book id="bk106">
-         <author>Randall, Cynthia</author>
+         <authors>
+            <author>Randall, Cynthia</author>
+         </authors>
          <title>Lover Birds</title>
          <genre>Romance</genre>
          <price>4.95</price>
@@ -82,7 +96,9 @@
          conference, tempers fly as feathers get ruffled.</description>
       </book>
       <book id="bk107">
-         <author>Thurman, Paula</author>
+         <authors>
+            <author>Thurman, Paula</author>
+         </authors>
          <title>Splish Splash</title>
          <genre>Romance</genre>
          <price>4.95</price>
@@ -91,7 +107,9 @@
          thousand leagues beneath the sea.</description>
       </book>
       <book id="bk108">
-         <author>Knorr, Stefan</author>
+         <authors>
+            <author>Knorr, Stefan</author>
+         </authors>
          <title>Creepy Crawlies</title>
          <genre>Horror</genre>
          <price>4.95</price>
@@ -100,7 +118,9 @@
          centipedes, scorpions  and other insects.</description>
       </book>
       <book id="bk109">
-         <author>Kress, Peter</author>
+         <authors>
+            <author>Kress, Peter</author>
+         </authors>
          <title>Paradox Lost</title>
          <genre>Science Fiction</genre>
          <price>6.95</price>
@@ -110,7 +130,9 @@
          of being quantum.</description>
       </book>
       <book id="bk110">
-         <author>O'Brien, Tim</author>
+         <authors>
+            <author>O'Brien, Tim</author>
+         </authors>
          <title>Microsoft .NET: The Programming Bible</title>
          <genre>Computer</genre>
          <price>36.95</price>
@@ -119,7 +141,9 @@
          detail in this deep programmer's reference.</description>
       </book>
       <book id="bk111">
-         <author>O'Brien, Tim</author>
+         <authors>
+            <author>O'Brien, Tim</author>
+         </authors>
          <title>MSXML3: A Comprehensive Guide</title>
          <genre>Computer</genre>
          <price>36.95</price>
@@ -129,7 +153,9 @@
          SAX and more.</description>
       </book>
       <book id="bk112">
-         <author>Galos, Mike</author>
+         <authors>
+            <author>Galos, Mike</author>
+         </authors>
          <title>Visual Studio 7: A Comprehensive Guide</title>
          <genre>Computer</genre>
          <price>49.95</price>

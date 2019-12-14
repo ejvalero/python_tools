@@ -26,7 +26,7 @@ def setAttribute(filename, parent, nodename, attribute, value,
         if typefile is str and filename.count('\n') is 0:
             tree = ET.parse(inputDir + filename)
         
-        elif 'xml.etree.ElementTree' in str( typefile ):
+        if 'xml.etree.ElementTree' in str( typefile ):
             tree = filename
 
 
@@ -79,7 +79,15 @@ def setAttribute(filename, parent, nodename, attribute, value,
 Implementation
 """
 
-xmlfile = 'DT00/dummy.xml'
+# Using parsed xml file as object
+xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
 
-setAttribute(xmlfile, 'catalog', 'book', 
+setAttribute(xmlfile, 'authors', 'author', 
              'completed', 'yes', nodeposition = 2)
+
+
+# Using data from .xml file directly
+# xmlfile = 'DT00/dummy.xml'
+
+# setAttribute(xmlfile, 'catalog', 'book', 
+#              'completed', 'yes', nodeposition = 4)

@@ -34,7 +34,7 @@
          <description>An in-depth look at creating applications 
          with XML.</description>
       </book>
-      <book completed="yes" id="bk102">
+      <book id="bk102">
          <authors>
             <author>Ralls, Kim</author>
          </authors>
@@ -58,7 +58,7 @@
          society in England, the young survivors lay the 
          foundation for a new society.</description>
       </book>
-      <book id="bk104">
+      <book completed="yes" id="bk104">
          <authors>
             <author>Corets, Eva</author>
          </authors>

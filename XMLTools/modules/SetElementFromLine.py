@@ -79,6 +79,7 @@ def setNodeToLine(filename, parent, nodename):
     indent(root)
     tree.write(output, encoding='utf-8')
 
+    return tree
 
 
 """

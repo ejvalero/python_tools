@@ -73,6 +73,8 @@ def setAttribute(filename, parent, nodename, attribute, value,
 
         tree.write(output, encoding='utf-8')
 
+        return tree
+
 
     except Exception as e:
         print('ERROR:', e)

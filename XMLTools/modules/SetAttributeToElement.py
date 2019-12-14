@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 def setAttribute(filename, parent, nodename, attribute, value, 
                  nodeposition = 'All'):
 
+
     # Define input and output directories, and typefile
     inputDir  = '../inputs/'
     outputDir = '../outputs/setAttributeToElement/'
@@ -41,7 +42,7 @@ def setAttribute(filename, parent, nodename, attribute, value,
         parentElement = tree.findall( nodepath )
 
         for child in parentElement:
-            child.set('completed', value)
+            child.set( attribute, value)
 
 
         # Display message to console
@@ -59,8 +60,11 @@ def setAttribute(filename, parent, nodename, attribute, value,
             os.makedirs( outputDir )
 
         if typefile is str and filename.count('\n') is 0:
-            pathfile  = filename.split('/')    
-            os.makedirs( outputDir + pathfile[0])
+            pathfile  = filename.split('/')
+
+            if not os.path.exists( outputDir + pathfile[0] ):
+                os.makedirs( outputDir + pathfile[0] )
+
             output = outputDir + filename
 
         else:
@@ -80,14 +84,22 @@ Implementation
 """
 
 # Using parsed xml file as object
-xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
+# xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
 
-setAttribute(xmlfile, 'authors', 'author', 
-             'completed', 'yes', nodeposition = 2)
+# setAttribute(xmlfile, 'authors', 'author', 
+#              'completed', 'yes', nodeposition = 2)
 
 
 # Using data from .xml file directly
-# xmlfile = 'DT00/dummy.xml'
 
-# setAttribute(xmlfile, 'catalog', 'book', 
-#              'completed', 'yes', nodeposition = 4)
+## Example 1
+xmlfile = 'DT00/dummy.xml'
+
+setAttribute(xmlfile, 'catalog', 'book', 
+             'completed', 'yes', nodeposition = 4)
+
+## Example 2
+xmlfile = 'xml/Keith_Foundations_2013.xml'
+
+setAttribute(xmlfile, 'cited-references', 'cited', 
+             'verified-node', 'no', nodeposition = 'All')

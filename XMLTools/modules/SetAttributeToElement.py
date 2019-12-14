@@ -12,7 +12,7 @@ LATEST UPDATE:
 import os, sys
 import xml.etree.ElementTree as ET
 
-def setAttribute(filename, parent, nodename, attribute, value ):
+def setAttribute(filename, parent, nodename, attribute, value, position = 'All'):
 
     # Define structure of input and output directories
     inputDir  = '../inputs/'
@@ -32,8 +32,19 @@ def setAttribute(filename, parent, nodename, attribute, value ):
         parent = tree.findall( './/' + parent + '/' + nodename)
         itemscount = len(parent)
 
-        for child in parent:
-            child.set('completed', 'yes')
+
+        if position is 'All':
+
+            for child in parent:
+                child.set('completed', 'yes')
+
+                print( child.get('completed'))
+            
+        else:
+            for child in parent:
+                child.set('completed', 'no')
+        
+                print( child.get('completed'))
 
     
     except:
@@ -46,4 +57,4 @@ Implementation
 
 
 xmlfile = 'DT00/dummy.xml'
-setAttribute(xmlfile, 'catalog', 'book', 'completed', 'yes')
+setAttribute(xmlfile, 'catalog', 'book', 'completed', 'yes', position=1)

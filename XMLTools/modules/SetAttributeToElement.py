@@ -15,15 +15,15 @@ from SaveXML import exportXML
 
 
 def setAttribute(filename, 
-                 parent, nodename, 
-                 attribute, value, nodeposition = 'All', 
+                 attribute, value,
+                 parent = { "name": '', "children": '', "nodeposition": 'All' },
                  output = { 'directory': None, 'name': None }):
 
 
     # Define input and output directories, and typefile
     inputDir  = '../inputs/'
     typefile = type( filename )
-    nodeposition = str(nodeposition)
+    parent['nodeposition'] = str( parent['nodeposition'] )
 
     try:
         # Import .xml file and get root of the tree
@@ -35,10 +35,10 @@ def setAttribute(filename,
 
 
         # Define node path for edit
-        nodepath = './/' + parent + '/' + nodename
+        nodepath = './/' + parent['name'] + '/' + parent['children']
 
-        if nodeposition is not 'All':
-            nodepath = nodepath + '[' + nodeposition + ']'
+        if parent['nodeposition'] is not 'All':
+            nodepath = nodepath + '[' + parent['nodeposition'] + ']'
 
 
         # Setting attributes
@@ -50,10 +50,10 @@ def setAttribute(filename,
 
         # Display message to console
         message = str( len(parentElement) ) + ' nodes assigned with attr ' + \
-                  attribute + '="' + value + '" inside ' + '<' + parent + '>'
+                  attribute + '="' + value + '" inside ' + '<' + parent['name'] + '>'
 
-        if nodeposition is not 'All':
-            message = message + ', position ' + nodeposition
+        if parent['nodeposition'] is not 'All':
+            message = message + ', position ' + parent['nodeposition']
         
         print('---', 'MESSAGE: ' + message, '---')
 
@@ -63,7 +63,7 @@ def setAttribute(filename,
         outname = output.get('name')
 
         if outdir is None:
-            outdir = uuid.uuid4().hex
+            outdir = uuid.uuid4().hex[:5]
 
         if outname is None:
             outname = uuid.uuid4().hex + '.xml'
@@ -100,8 +100,9 @@ Implementation
 ## Example 1
 xmlfile = 'DT00/dummy.xml'
 
-setAttribute(xmlfile, 
-             'catalog', 'book', 'completed', 'yes', nodeposition = 1,
+setAttribute(xmlfile,
+             'completed', 'yes',
+             parent = { 'name' : 'catalog', 'children': 'book', 'nodeposition': 1 },
              output= { 'directory': 'DT00', 'name': 'dummy.xml'}
              )
 
@@ -109,5 +110,9 @@ setAttribute(xmlfile,
 xmlfile = 'xml/Keith_Foundations_2013.xml'
 
 setAttribute(xmlfile, 
-             'cited-references', 'cited', 'verified-node', 'no', nodeposition = 'All',
+             'verified-node', 'no',
+             parent = { 
+                 "name" : 'cited-references', 
+                 "children": 'cited', 
+                 "nodeposition": 'All' },
              )

@@ -23,7 +23,7 @@
       </book>   
    </address>
    <catalog>
-      <book completed="yes" id="bk101">
+      <book id="bk101">
          <authors>
             <author>Gambardella, Matthew</author>
          </authors>

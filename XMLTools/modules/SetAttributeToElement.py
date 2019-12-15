@@ -11,14 +11,17 @@ LATEST UPDATE:
 
 import os, sys, uuid
 import xml.etree.ElementTree as ET
+from SaveXML import exportXML
 
-def setAttribute(filename, parent, nodename, attribute, value, 
-                 nodeposition = 'All'):
+
+def setAttribute(filename, 
+                 parent, nodename, 
+                 attribute, value, nodeposition = 'All', 
+                 output = { 'directory': None, 'name': None }):
 
 
     # Define input and output directories, and typefile
     inputDir  = '../inputs/'
-    outputDir = '../outputs/setAttributeToElement/'
     typefile = type( filename )
     nodeposition = str(nodeposition)
 
@@ -56,22 +59,22 @@ def setAttribute(filename, parent, nodename, attribute, value,
 
 
         # Save updated xml files
-        if not os.path.exists( outputDir ):
-            os.makedirs( outputDir )
+        outdir  = output.get('directory')
+        outname = output.get('name')
 
-        if typefile is str and filename.count('\n') is 0:
-            pathfile  = filename.split('/')
+        if outdir is None:
+            outdir = uuid.uuid4().hex
 
-            if not os.path.exists( outputDir + pathfile[0] ):
-                os.makedirs( outputDir + pathfile[0] )
-
-            output = outputDir + filename
-
-        else:
-            output = outputDir + str(uuid.uuid4()) + '.xml'
+        if outname is None:
+            outname = uuid.uuid4().hex + '.xml'
 
 
-        tree.write(output, encoding='utf-8')
+        exportXML(
+            tree, outname, outputdirs = [
+                '..', 'outputs', 'setAttributeToElement', outdir
+            ]
+        )
+        
 
         return tree
 
@@ -97,11 +100,14 @@ Implementation
 ## Example 1
 xmlfile = 'DT00/dummy.xml'
 
-setAttribute(xmlfile, 'catalog', 'book', 
-             'completed', 'yes', nodeposition = 4)
+setAttribute(xmlfile, 
+             'catalog', 'book', 'completed', 'yes', nodeposition = 1,
+             output= { 'directory': 'DT00', 'name': 'dummy.xml'}
+             )
 
 ## Example 2
 xmlfile = 'xml/Keith_Foundations_2013.xml'
 
-setAttribute(xmlfile, 'cited-references', 'cited', 
-             'verified-node', 'no', nodeposition = 'All')
+setAttribute(xmlfile, 
+             'cited-references', 'cited', 'verified-node', 'no', nodeposition = 'All',
+             )

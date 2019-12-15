@@ -14,10 +14,12 @@ import xml.etree.ElementTree as ET
 from SaveXML import exportXML
 
 
-def setAttribute(filename, 
-                 attribute, value,
-                 parent = { "name": '', "children": '', "nodeposition": 'All' },
-                 output = { 'directory': None, 'name': None }):
+def setAttribute(
+        filename, 
+        parent    = { "name": '', "children": '', "nodeposition": 'All' },
+        attribute = [],
+        output    = { 'folder': None, 'name': None }
+    ):
 
 
     # Define input and output directories, and typefile
@@ -45,12 +47,13 @@ def setAttribute(filename,
         parentElement = tree.findall( nodepath )
 
         for child in parentElement:
-            child.set( attribute, value)
+            child.set( attribute[ 0 ], attribute[ 1 ] )
 
 
         # Display message to console
         message = str( len(parentElement) ) + ' nodes assigned with attr ' + \
-                  attribute + '="' + value + '" inside ' + '<' + parent['name'] + '>'
+                  attribute[ 0 ] + '="' + attribute[ 1 ] + '" inside ' + \
+                  '<' + parent['name'] + '>'
 
         if parent['nodeposition'] is not 'All':
             message = message + ', position ' + parent['nodeposition']
@@ -59,7 +62,7 @@ def setAttribute(filename,
 
 
         # Save updated xml files
-        outdir  = output.get('directory')
+        outdir  = output.get('folder')
         outname = output.get('name')
 
         if outdir is None:
@@ -89,10 +92,14 @@ Implementation
 """
 
 # Using parsed xml file as object
-# xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
+xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
 
-# setAttribute(xmlfile, 'authors', 'author', 
-#              'completed', 'yes', nodeposition = 2)
+setAttribute(
+    xmlfile,
+    parent    = { 'name' : 'authors', 'children': 'author', 'nodeposition': 2 },
+    attribute = [ 'completed', 'yes' ],
+    output    = { 'folder': 'xml', 'name': 'Bland_MesoAmericaReef_2017.xml'}
+)
 
 
 # Using data from .xml file directly
@@ -100,19 +107,22 @@ Implementation
 ## Example 1
 xmlfile = 'DT00/dummy.xml'
 
-setAttribute(xmlfile,
-             'completed', 'yes',
-             parent = { 'name' : 'catalog', 'children': 'book', 'nodeposition': 1 },
-             output= { 'directory': 'DT00', 'name': 'dummy.xml'}
-             )
+setAttribute(
+    xmlfile,
+    parent    = { 'name' : 'catalog', 'children': 'book', 'nodeposition': 1 },
+    attribute = [ 'completed', 'yes' ],
+    output    = { "folder": 'DT00', "name": 'dummy.xml'}
+)
 
 ## Example 2
 xmlfile = 'xml/Keith_Foundations_2013.xml'
 
-setAttribute(xmlfile, 
-             'verified-node', 'no',
-             parent = { 
-                 "name" : 'cited-references', 
-                 "children": 'cited', 
-                 "nodeposition": 'All' },
-             )
+setAttribute(
+    xmlfile, 
+    parent = { 
+        "name" : 'cited-references', 
+        "children": 'cited', 
+        "nodeposition": 'All' 
+    },
+    attribute = [ 'verified-node', 'no']
+)

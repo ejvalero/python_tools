@@ -23,14 +23,15 @@ def setAttribute(
 
 
     # Define input and output directories, and typefile
-    inputDir  = '../inputs/'
-    typefile = type( filename )
+    typefile         = type( filename )
     node['position'] = str( node['position'] )
+
 
     try:
         # Import .xml file and get root of the tree
         if typefile is str and filename.count('\n') is 0:
-            tree = ET.parse(inputDir + filename)
+            inputfile = os.path.join('inputs', filename)
+            tree = ET.parse(inputfile)
         
         if 'xml.etree.ElementTree' in str( typefile ):
             tree = filename
@@ -74,7 +75,7 @@ def setAttribute(
 
         exportXML(
             tree, outname, outputdirs = [
-                '..', 'outputs', 'setAttributeToElement', outdir
+                'outputs', 'setAttributeToElement', outdir
             ]
         )
         
@@ -92,37 +93,37 @@ Implementation
 """
 
 # Using parsed xml file as object
-xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
+# xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
 
-setAttribute(
-    xmlfile,
-    node      = { "parent" : 'authors', "name": 'author', "position": 2 },
-    attribute = [ 'completed', 'yes' ],
-    output    = { 'folder': 'xml', 'name': 'Bland_MesoAmericaReef_2017.xml'}
-)
+# setAttribute(
+#     xmlfile,
+#     node      = { "parent" : 'authors', "name": 'author', "position": 2 },
+#     attribute = [ 'completed', 'yes' ],
+#     output    = { 'folder': 'xml', 'name': 'Bland_MesoAmericaReef_2017.xml'}
+# )
 
 
 # Using data from .xml file directly
 
 ## Example 1
-xmlfile = 'DT00/dummy.xml'
+# xmlfile = 'DT00/dummy.xml'
 
-setAttribute(
-    xmlfile,
-    node      = { "parent" : 'catalog', "name": 'book', "position": 1 },
-    attribute = [ 'completed', 'yes' ],
-    output    = { "folder": 'DT00', "name": 'dummy.xml'}
-)
+# setAttribute(
+#     xmlfile,
+#     node      = { "parent" : 'catalog', "name": 'book', "position": 1 },
+#     attribute = [ 'completed', 'yes' ],
+#     output    = { "folder": 'DT00', "name": 'dummy.xml'}
+# )
 
 ## Example 2
-xmlfile = 'xml/Keith_Foundations_2013.xml'
+# xmlfile = 'xml/Keith_Foundations_2013.xml'
 
-setAttribute(
-    xmlfile, 
-    node = { 
-        "parent" : 'cited-references', 
-        "name": 'cited', 
-        "position": 'All' 
-    },
-    attribute = [ 'verified-node', 'no']
-)
+# setAttribute(
+#     xmlfile, 
+#     node = { 
+#         "parent" : 'cited-references', 
+#         "name": 'cited', 
+#         "position": 'All' 
+#     },
+#     attribute = [ 'verified-node', 'no']
+# )

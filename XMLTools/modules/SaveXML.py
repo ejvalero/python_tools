@@ -33,6 +33,6 @@ def exportXML(xmlfile, outputname, outputdirs = ['..', 'outputs']):
 Implementation
 """
 
-xmlfile = ET.parse('../inputs/DT00/dummy.xml')
+#xmlfile = ET.parse('../inputs/DT00/dummy.xml')
 
-exportXML(xmlfile, 'filename.xml', outputdirs = ['..', 'outputs', 'anotherdir'])
+#exportXML(xmlfile, 'filename.xml', outputdirs = ['..', 'outputs', 'anotherdir'])

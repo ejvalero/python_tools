@@ -12,23 +12,27 @@ LATEST UPDATE:
 
 import os, io
 import xml.etree.ElementTree as ET
+from SaveXML import exportXML
 
 
-def setNodeToLine(filename, parent, nodename):
+def setNodeToLine(
+        filename, 
+        node   = { "parent": '', "name": ''},
+        output = { "folder": None, "name": None }
+    ):
         
     # Define structure of input and output directories
-    inputDir  = 'inputs/'
-    outputDir = 'outputs/'
-    pathfile  = filename.split('/')
+    inputfile  = os.path.join('inputs', filename)
+    pathfile  = filename.split('/')   ## TODO: implement auto detetc filename
 
 
     # Import .xml file and get root of the tree
-    tree = ET.parse(inputDir + filename)
+    tree = ET.parse(inputfile)
 
 
     # Find all containers whose tags matches with 'parent' parameter. 
     # Then, for each text line in them, assign node with name equals to 'nodename'
-    for child in tree.findall('.//' + parent):
+    for child in tree.findall('.//' + node['parent']):
 
         # Detect and rename existent nodes
         if len(child) > 0:
@@ -37,12 +41,12 @@ def setNodeToLine(filename, parent, nodename):
             print( 
                 '---',
                 'WARNING: ' + childrenCount + ' <'+ childName + '> nodes in "' + 
-                pathfile[1] + '" were changed to <' + nodename + '>',
+                pathfile[1] + '" were changed to <' + node['name'] + '>',
                 '---'
             )
 
             for cited in child:
-                cited.tag = nodename
+                cited.tag = node['name']
 
         # Set nodename to each text line inside 'parent'
         childText = child.text
@@ -59,25 +63,31 @@ def setNodeToLine(filename, parent, nodename):
                 line = ' '.join(line.split())
 
                 if line is not '':
-                    ct = ET.Element(nodename)
+                    ct = ET.Element(node['name'])
                     ct.text = line
                     child.text = ''
                     child.insert(1, ct)
 
 
     # Export xml outputs to root path defined in 'outputDir'
-    if not os.path.exists(outputDir):
-        
-        if pathfile[0] is not None:
-            os.makedirs(outputDir + 'setElementFromLine/')
-        else:
-            os.makedirs(outputDir)
+    outdir  = output.get('folder')
+    outname = output.get('name')
 
-    output = outputDir + 'setElementFromLine/' + pathfile[1]
+    if outdir is None:
+        outdir = 'XML'
+
+    if outname is None:
+        outname = uuid.uuid4().hex + '.xml'
 
     root = tree.getroot()
     indent(root)
-    tree.write(output, encoding='utf-8')
+
+    exportXML(
+        tree, outname, outputdirs = [
+            'outputs', 'setElementFromLine', outdir
+        ]
+    )
+
 
     return tree
 
@@ -111,3 +121,16 @@ def indent(element, level = 0, more_sibs = False):
         if level and (not element.tail or not element.tail.strip()):
             element.tail = i
             if more_sibs: element.tail += '  '
+
+
+"""
+Implementation
+"""
+
+# xmlfile = 'DT00/dummy.xml'
+
+# setNodeToLine(
+#     xmlfile,
+#     node      = { "parent" : 'description', "name": 'desc' },
+#     output    = { "folder": 'DT00', "name": 'dummy.xml'}
+# )

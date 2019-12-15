@@ -16,16 +16,16 @@ from SaveXML import exportXML
 
 def setAttribute(
         filename, 
-        parent    = { "name": '', "children": '', "nodeposition": 'All' },
-        attribute = [],
-        output    = { 'folder': None, 'name': None }
+        node      = { "parent": '', "name": '', "position": 'All' },
+        attribute = ['', ''],
+        output    = { "folder": None, "name": None }
     ):
 
 
     # Define input and output directories, and typefile
     inputDir  = '../inputs/'
     typefile = type( filename )
-    parent['nodeposition'] = str( parent['nodeposition'] )
+    node['position'] = str( node['position'] )
 
     try:
         # Import .xml file and get root of the tree
@@ -37,10 +37,10 @@ def setAttribute(
 
 
         # Define node path for edit
-        nodepath = './/' + parent['name'] + '/' + parent['children']
+        nodepath = './/' + node['parent'] + '/' + node['name']
 
-        if parent['nodeposition'] is not 'All':
-            nodepath = nodepath + '[' + parent['nodeposition'] + ']'
+        if node['position'] is not 'All':
+            nodepath = nodepath + '[' + node['position'] + ']'
 
 
         # Setting attributes
@@ -53,10 +53,10 @@ def setAttribute(
         # Display message to console
         message = str( len(parentElement) ) + ' nodes assigned with attr ' + \
                   attribute[ 0 ] + '="' + attribute[ 1 ] + '" inside ' + \
-                  '<' + parent['name'] + '>'
+                  '<' + node['parent'] + '>'
 
-        if parent['nodeposition'] is not 'All':
-            message = message + ', position ' + parent['nodeposition']
+        if node['position'] is not 'All':
+            message = message + ', position ' + node['position']
         
         print('---', 'MESSAGE: ' + message, '---')
 
@@ -66,7 +66,7 @@ def setAttribute(
         outname = output.get('name')
 
         if outdir is None:
-            outdir = uuid.uuid4().hex[:5]
+            outdir = 'XML'
 
         if outname is None:
             outname = uuid.uuid4().hex + '.xml'
@@ -96,7 +96,7 @@ xmlfile = ET.parse('../inputs/xml/Bland_MesoAmericaReef_2017.xml')
 
 setAttribute(
     xmlfile,
-    parent    = { 'name' : 'authors', 'children': 'author', 'nodeposition': 2 },
+    node      = { "parent" : 'authors', "name": 'author', "position": 2 },
     attribute = [ 'completed', 'yes' ],
     output    = { 'folder': 'xml', 'name': 'Bland_MesoAmericaReef_2017.xml'}
 )
@@ -109,7 +109,7 @@ xmlfile = 'DT00/dummy.xml'
 
 setAttribute(
     xmlfile,
-    parent    = { 'name' : 'catalog', 'children': 'book', 'nodeposition': 1 },
+    node      = { "parent" : 'catalog', "name": 'book', "position": 1 },
     attribute = [ 'completed', 'yes' ],
     output    = { "folder": 'DT00', "name": 'dummy.xml'}
 )
@@ -119,10 +119,10 @@ xmlfile = 'xml/Keith_Foundations_2013.xml'
 
 setAttribute(
     xmlfile, 
-    parent = { 
-        "name" : 'cited-references', 
-        "children": 'cited', 
-        "nodeposition": 'All' 
+    node = { 
+        "parent" : 'cited-references', 
+        "name": 'cited', 
+        "position": 'All' 
     },
     attribute = [ 'verified-node', 'no']
 )

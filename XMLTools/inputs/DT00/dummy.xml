@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <library>
    <address>
-      <book id="abk001">
+      <book id="abk001" completed='yes' verified='false'>
          <authors>
             <author>Gambardella, Matthew</author>
          </authors>

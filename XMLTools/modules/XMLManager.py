@@ -84,7 +84,7 @@ class XMLFileManager():
         def displayMessages():
             nodes = len( self.element)
 
-            if nodes is 0:
+            if nodes is not 0:
 
                 if components is 1:
                     info = '<' + pathcomponents[0] + '>'
@@ -96,7 +96,7 @@ class XMLFileManager():
                     nodes = ''
                     info = info + str(nodes) + ', position ' + str(position)
 
-                print( '---', 'MESSAGE: Selected ' + info, '---' )
+                print( '---', 'SUCCESS: Selected ' + info, '---' )
                 print( self.element )
             
             else:

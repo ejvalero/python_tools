@@ -1,14 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-AUTHOR: 
-    Emanuel Valero - Provita
-
-LATEST UPDATE:
-    2019-12-10
-"""
-
 import os, sys, uuid
 import xml.etree.ElementTree as ET
 from SaveXML import exportXML
@@ -87,7 +76,6 @@ def setAttribute(
         print('ERROR:', e)
         sys.exit(1)
   
-
 """
 Implementation
 """

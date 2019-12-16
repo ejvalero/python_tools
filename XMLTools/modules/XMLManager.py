@@ -45,51 +45,50 @@ class XMLFileManager():
 
 
         # Filtered element is main tree by default
-        nodepath = None
-        filtered = self.tree
+        self.element = self.tree
 
 
-        # Setting up nodepath by parent, nodename, position and attributes
+        # Functions for build xpath based on parent, nodename, position and attributes
         def includeAttributes( basepath ):
-
             if len(attributes) > 0:
                 attrpath = ''
 
                 for attr in attributes:
-                    attrpath = attrpath + '[@' + attr[0] + '="' + attr[1]+ '"]'
+                    attrpath = attrpath + '[@' + attr[ 0 ] + '="' + attr[ 1 ]+ '"]'
 
-                nodepath = basepath + attrpath
+                return basepath + attrpath
+            
+            else:
+                return basepath
 
-                return nodepath
+        def buildXpath():
+            pathcomponents = [ parent, nodename ]
+            pathcomponents  = ' '.join( pathcomponents ).split()
+            components = len( pathcomponents )
 
+            if components > 0:
+                if components is 1:
+                    xpath = './/' + pathcomponents[0]
 
-        pathcomponents = [ parent, nodename ]
-        pathcomponents  = ' '.join( pathcomponents ).split()
-        components = len( pathcomponents )
+                if components is 2:
+                    xpath = './/' + parent + '/' + nodename
 
-        if components > 0:
+                if position is not 'All':
+                    xpath = xpath + '[' + str(position) + ']'
 
-            if components is 1:
-                nodepath = './/' + pathcomponents[0]
+                return includeAttributes( xpath )
 
-            if components is 2:
-                nodepath = './/' + parent + '/' + nodename
-
-            if position is not 'All':
-                nodepath = nodepath + '[' + str(position) + ']'
-
-
-            nodepath = includeAttributes( nodepath )
-
-        else:
-            nodepath = includeAttributes( './/*' )
+            else:
+                return includeAttributes( './/*' )
             
 
-        print(nodepath)
-        if nodepath is not None: filtered = self.tree.findall( nodepath )
+        # Select element using xpath
+        nodepath =  buildXpath()
 
-        
-        self.element = filtered
+        if nodepath is not None:
+            print(nodepath)
+            self.element = self.tree.findall( nodepath )
+
         return self.element
 
 
@@ -119,13 +118,22 @@ class XMLFileManager():
 
 filename = 'DT00/dummy.xml'
 
+# parameters = {
+#     "parent": 'book', 
+#     "nodename" : '', 
+#     "position" : 'All',
+#     "attributes": [
+#         ['completed', 'yes'],
+#         ['verified', 'false']
+#     ]
+# }
+
 parameters = {
-    "parent": 'book', 
-    "nodename" : '', 
-    "position" : 'All',
+    "parent": 'catalog', 
+    "nodename" : 'book', 
+    "position" : '2',
     "attributes": [
-        ['completed', 'yes'],
-        ['verified', 'false']
+
     ]
 }
 

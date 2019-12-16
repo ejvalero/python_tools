@@ -34,13 +34,16 @@ class XMLFileManager():
     """
     Filter element using parent, node name and node position
     """
-    def filterElements( self, parameters):
+    def filterElements( self, parameters, verbose = True):
 
         # Define initial parameters
         parent     = parameters['parent']
         nodename   = parameters['nodename']
         position   = parameters['position']
         attributes = parameters['attributes']
+        pathcomponents  = [ parent, nodename ]
+        pathcomponents  = ' '.join( pathcomponents ).split()
+        components      = len( pathcomponents )
         self.parameters = parameters
 
 
@@ -62,32 +65,52 @@ class XMLFileManager():
                 return basepath
 
         def buildXpath():
-            pathcomponents = [ parent, nodename ]
-            pathcomponents  = ' '.join( pathcomponents ).split()
-            components = len( pathcomponents )
+            if components is  0:
+                xpath = './/*'
 
-            if components > 0:
+            if components is 1:
+                xpath = './/' + pathcomponents[0]
+
+            if components is 2:
+                xpath = './/' + parent + '/' + nodename
+
+            if position is not 'All':
+                xpath = xpath + '[' + str(position) + ']'
+
+            return includeAttributes( xpath )
+
+
+        # Display output messages to console
+        def displayMessages():
+            nodes = len( self.element)
+
+            if nodes is 0:
+
                 if components is 1:
-                    xpath = './/' + pathcomponents[0]
+                    info = '<' + pathcomponents[0] + '>'
 
                 if components is 2:
-                    xpath = './/' + parent + '/' + nodename
+                    info = '<' + nodename + '> element from parent <' + parent + '>'
 
                 if position is not 'All':
-                    xpath = xpath + '[' + str(position) + ']'
+                    nodes = ''
+                    info = info + str(nodes) + ', position ' + str(position)
 
-                return includeAttributes( xpath )
-
-            else:
-                return includeAttributes( './/*' )
+                print( '---', 'MESSAGE: Selected ' + info, '---' )
+                print( self.element )
             
+            else:
+                print( '---', 'WARNING: No element matching your parameters')
 
-        # Select element using xpath
+
+        # Select element using xpath and display outputs to console
         nodepath =  buildXpath()
 
         if nodepath is not None:
-            print(nodepath)
             self.element = self.tree.findall( nodepath )
+            if verbose: displayMessages()
+            
+
 
         return self.element
 
@@ -138,4 +161,3 @@ parameters = {
 }
 
 node = XMLFileManager( filename ).filterElements( parameters )
-print(node)

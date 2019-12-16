@@ -96,6 +96,10 @@ class XMLFileManager():
                     nodes = ''
                     info = info + str(nodes) + ', position ' + str(position)
 
+                else:
+                    nodes = ''
+                    info = 'all ' + info + ' elements'
+
                 print( '---', 'SUCCESS: Selected ' + info, '---' )
                 print( self.element )
             

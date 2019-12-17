@@ -13,7 +13,6 @@ import xml.etree.ElementTree as ET
 
 class XMLFileManager():
 
-
     """
     Import or parameterse filename
     """
@@ -41,8 +40,7 @@ class XMLFileManager():
         nodename   = parameters['nodename']
         position   = parameters['position']
         attributes = parameters['attributes']
-        pathcomponents  = [ parent, nodename ]
-        pathcomponents  = ' '.join( pathcomponents ).split()
+        pathcomponents  = ' '.join( [ parent, nodename ] ).split()
         components      = len( pathcomponents )
         self.parameters = parameters
 
@@ -72,7 +70,7 @@ class XMLFileManager():
                 xpath = './/' + pathcomponents[0]
 
             if components is 2:
-                xpath = './/' + parent + '/' + nodename
+                xpath = './/' + parameters['parent'] + '/' + nodename
 
             if position not in [ 'All', '' ]:
                 xpath = xpath + '[' + str(position) + ']'
@@ -100,11 +98,10 @@ class XMLFileManager():
                     info = nodes \
                          + '<' + nodename + '>' + ' ' + elem \
                          + posmsg \
-                         + ' from parent ' + '<' + parent + '>'
+                         + ' from parent ' + '<' + parameters['parent'] + '>'
 
 
                 print( '---', 'SUCCESS: Selected ' + info, '---' )
-                print( self.element )
             
             else:
                 print( '---', 'WARNING: No element matching your parameters')
@@ -115,8 +112,9 @@ class XMLFileManager():
 
         if nodepath is not None:
             self.element = self.tree.findall( nodepath )
-            if verbose: displayMessages()
-            
+            if verbose: 
+                displayMessages()
+                print( *self.element, sep='\n' )
 
 
         return self.element

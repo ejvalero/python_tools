@@ -74,7 +74,7 @@ class XMLFileManager():
             if components is 2:
                 xpath = './/' + parent + '/' + nodename
 
-            if position is not 'All':
+            if position not in [ 'All', '' ]:
                 xpath = xpath + '[' + str(position) + ']'
 
             return includeAttributes( xpath )
@@ -85,20 +85,22 @@ class XMLFileManager():
             nodes = len( self.element )
 
             if nodes is not 0:
-                el = 'elements' if position in ['All', ''] else 'element'
-                pos = str(position) if position not in ['All', ''] else ''
-                nodes = str(nodes) + ' ' if position in ['All', ''] else ''
-                end = 'from all of its parents' if components is 1 else '' 
+                elem   = 'elements' if position in ['All', ''] else 'element'
+                nodes  = str(nodes) + ' ' if position in ['All', ''] else ''
+                posmsg = ' in position ' + str(position) if position not in ['All', ''] else ''
+
 
                 if components is 1:
-                    info = '<' + pathcomponents[0] + '> ' + el
+                    info = nodes \
+                         + '<' + pathcomponents[0] + '> ' + elem \
+                         + posmsg \
+                         + ' from all of its parents'
 
                 if components is 2:
-                    info = '<' + nodename + '>' + ' ' + el + ' from parent <' \
-                               + parent + '>'
-
-                if position is not 'All':
-                    info = info + nodes + ', position ' + pos + ' ' + end
+                    info = nodes \
+                         + '<' + nodename + '>' + ' ' + elem \
+                         + posmsg \
+                         + ' from parent ' + '<' + parent + '>'
 
 
                 print( '---', 'SUCCESS: Selected ' + info, '---' )
@@ -157,9 +159,9 @@ filename = 'DT00/dummy.xml'
 # }
 
 parameters = {
-    "parent": 'catalog', 
+    "parent": '', 
     "nodename" : 'book', 
-    "position" : 2,
+    "position" : '2',
     "attributes": [
 
     ]

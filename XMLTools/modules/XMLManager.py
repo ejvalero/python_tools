@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -82,23 +82,24 @@ class XMLFileManager():
 
         # Display output messages to console
         def displayMessages():
-            nodes = len( self.element)
+            nodes = len( self.element )
 
             if nodes is not 0:
+                el = 'elements' if position in ['All', ''] else 'element'
+                pos = str(position) if position not in ['All', ''] else ''
+                nodes = str(nodes) + ' ' if position in ['All', ''] else ''
+                end = 'from all of its parents' if components is 1 else '' 
 
                 if components is 1:
-                    info = '<' + pathcomponents[0] + '>'
+                    info = '<' + pathcomponents[0] + '> ' + el
 
                 if components is 2:
-                    info = '<' + nodename + '> element from parent <' + parent + '>'
+                    info = '<' + nodename + '>' + ' ' + el + ' from parent <' \
+                               + parent + '>'
 
                 if position is not 'All':
-                    nodes = ''
-                    info = info + str(nodes) + ', position ' + str(position)
+                    info = info + nodes + ', position ' + pos + ' ' + end
 
-                else:
-                    nodes = ''
-                    info = 'all ' + info + ' elements'
 
                 print( '---', 'SUCCESS: Selected ' + info, '---' )
                 print( self.element )
@@ -158,7 +159,7 @@ filename = 'DT00/dummy.xml'
 parameters = {
     "parent": 'catalog', 
     "nodename" : 'book', 
-    "position" : '2',
+    "position" : 2,
     "attributes": [
 
     ]

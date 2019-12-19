@@ -126,20 +126,22 @@ class XMLFileManager():
     """
     def setAttributeToElement(self, element, attribute, value):
 
+
         try:
-            all( [element, attribute, value] )
+            # Setting attributes
+            parentElement = tree.findall( nodepath )
+
+            for child in parentElement:
+                child.set( attribute[ 0 ], attribute[ 1 ] )
 
 
         except Exception as e:
             print(e)
             sys.exit(1)
 
-            
-
-    """
-    def displayMessage():
-        return
     
+    
+    """
     def exportOutput():
         return
     """

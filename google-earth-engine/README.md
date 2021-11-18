@@ -9,7 +9,7 @@ In this repository you will find useful codes to locally manage and visualize da
 
 - **Description**: user-friendly script to filter an visualize the stable pixels generated from the collection 3 of MapBiomas Amazonia.
 - **Parameters**:
-    ```json
+    ```python
     config = {
         "country": 'Ecuador',
         "classes_ids": [3, 14, 24],               # [] for include all legend classes.

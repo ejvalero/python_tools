@@ -5,7 +5,7 @@ In this repository you will find useful codes to locally manage and visualize da
 ## Content
 
 ## visualize-mapbiomas-c3-stable-pixels.py.
-![Stable pixels visualizer](https://raw.githubusercontent.com/ejvalero/python_tools/master/stable-pixels-visualizer.png)
+![Stable pixels visualizer](https://github.com/ejvalero/python_tools/blob/master/google-earth-engine/stable-pixels-visualizer.png)
 
 - **Description**: user-friendly script to filter an visualize the stable pixels generated from the collection 3 of MapBiomas Amazonia.
 - **Parameters**:
